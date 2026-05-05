@@ -64,7 +64,7 @@ export default function Header() {
             <span>(808) 342-6305</span>
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="bg-[#d52128] hover:bg-[#b91b21] text-[#fff8ed] text-sm font-semibold px-6 py-2.5 rounded-sm transition-colors duration-200 font-[family-name:var(--font-inter)]"
           >
             Book Now
@@ -103,7 +103,7 @@ export default function Header() {
                 (808) 342-6305
               </a>
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setMobileOpen(false)}
                 className="bg-[#d52128] text-[#fff8ed] text-sm font-semibold px-6 py-3 rounded-sm text-center font-[family-name:var(--font-inter)]"
               >

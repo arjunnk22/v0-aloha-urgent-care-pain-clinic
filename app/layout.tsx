@@ -62,9 +62,9 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: 'https://fwndqprdqitzrprauvqy.supabase.co/storage/v1/object/public/brand-uploads/uploads/favicon/varakit-favicon.png',
+    icon: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/kDkGSIGVaDqgM66OUvpuw-Kgy6eBKlvfHemyaiYAuT7yhOPpmNF8.png',
     apple:
-      'https://fwndqprdqitzrprauvqy.supabase.co/storage/v1/object/public/brand-uploads/uploads/favicon/varakit-favicon.png',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/kDkGSIGVaDqgM66OUvpuw-Kgy6eBKlvfHemyaiYAuT7yhOPpmNF8.png',
   },
     generator: 'v0.app'
 }
@@ -122,7 +122,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#6ba6c5" />
         <link
           rel="icon"
-          href="https://fwndqprdqitzrprauvqy.supabase.co/storage/v1/object/public/brand-uploads/uploads/favicon/varakit-favicon.png"
+          href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/kDkGSIGVaDqgM66OUvpuw-Kgy6eBKlvfHemyaiYAuT7yhOPpmNF8.png"
         />
         <link rel="canonical" href="https://alohaurgentcare.com" />
         <meta name="robots" content="index, follow" />

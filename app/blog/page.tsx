@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: 'Health Blog | Aloha Urgent Care & Pain Clinic — Waikiki, Honolulu',
   description:
     'Physician-written health articles on urgent care, pain management, IV therapy, weight loss, and travel health — from the team at Aloha Urgent Care & Pain Clinic in Waikiki.',
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: {
     canonical: 'https://alohaurgentcare.com/blog',
   },

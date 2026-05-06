@@ -49,12 +49,13 @@ export default function Contact() {
     setErrorMsg('')
 
     try {
-      const res = await fetch('https://testing.varakit.com/api/email/contact-forms', {
+      const res = await fetch('https://varakit.com/api/email/contact-forms', {
         method: 'POST',
         mode: 'cors',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           adminEmail: 'avatar0611@gmail.com',
+
           formData: form,
           userId: 'a0edf849-c0c9-4e91-9095-d51bb43b9d7a',
         }),

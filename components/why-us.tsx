@@ -122,14 +122,14 @@ export default function WhyUs() {
             Why Choose Us
           </span>
           <h2
-            className="text-[#0d2d3a] font-black text-balance"
+            className="text-black font-black text-balance"
             style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.1 }}
           >
             The Aloha Difference —
             <br />
             <span className="text-[#d52128]">Care Without Compromise</span>
           </h2>
-          <p className="mt-5 text-[#0d2d3a]/60 text-base leading-relaxed">
+          <p className="mt-5 text-black/60 text-base leading-relaxed">
             We built Aloha Urgent Care to eliminate everything frustrating about healthcare —
             the waits, the runarounds, the confusion, the referrals.
           </p>

@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react'
 
 export default function About() {
   return (
-    <section id="about" className="bg-[#fff8ed] py-24 lg:py-32">
+    <section id="about" className="bg-white py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="relative order-2 lg:order-1">
@@ -32,17 +32,17 @@ export default function About() {
             <span className="inline-block text-[#d52128] text-xs font-bold uppercase tracking-widest mb-4 font-[family-name:var(--font-inter)]">
               Our Mission
             </span>
-            <h2 className="text-[#6ba6c5] font-black text-balance mb-6" style={{ fontSize: 'clamp(1.9rem, 3.8vw, 2.8rem)', lineHeight: 1.1 }}>
+            <h2 className="text-black font-black text-balance mb-6" style={{ fontSize: 'clamp(1.9rem, 3.8vw, 2.8rem)', lineHeight: 1.1 }}>
               Fast, Efficient &amp; Accessible —
               <span className="text-[#d52128]"> For Everyone</span>
             </h2>
-            <p className="text-[#5a5a6e] text-base leading-relaxed mb-4">
+            <p className="text-black/65 text-base leading-relaxed mb-4">
               Aloha Urgent Care &amp; Pain Clinic was built with one goal: deliver fast, physician-led
               care where everything is handled in a single visit. We operate outside the traditional
               healthcare model — positioned as a modern, efficient, high-quality alternative designed
               for convenience, speed, and personalized care.
             </p>
-            <p className="text-[#5a5a6e] text-base leading-relaxed mb-8">
+            <p className="text-black/65 text-base leading-relaxed mb-8">
               Whether you&apos;re a local family, an international visitor to Waikiki, a working professional
               with no time to spare, or an elderly patient needing attentive care — we eliminate
               everything frustrating about healthcare: the waits, the runarounds, and the confusion.

@@ -44,7 +44,7 @@ const values = [
 
 export default function AboutPageClient() {
   return (
-    <main className="bg-[#fff8ed]">
+    <main className="bg-white">
 
       {/* ── Hero ── */}
       <section className="bg-[#6ba6c5] pt-36 pb-20 relative overflow-hidden">
@@ -93,7 +93,7 @@ export default function AboutPageClient() {
       </section>
 
       {/* ── Dr. Yang Bio ── */}
-      <section className="py-24 lg:py-32 bg-[#fff8ed]">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
@@ -121,24 +121,24 @@ export default function AboutPageClient() {
                 Meet the Doctor
               </span>
               <h2
-                className="text-[#6ba6c5] font-black text-balance mb-6"
+                className="text-black font-black text-balance mb-6"
                 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', lineHeight: 1.1 }}
               >
                 About Dr. Sung S. Yang
               </h2>
-              <p className="text-[#5a5a6e] text-base leading-relaxed mb-5">
+              <p className="text-black/65 text-base leading-relaxed mb-5">
                 Raised in New Jersey, Dr. Sung S. Yang moved to Hawaii in 2010 to open his practice
                 in Waikiki — with a mission to personalize and improve healthcare in the state of Hawaii.
                 He takes pride in providing affordable and professional care for Hawaii residents and
                 visitors alike.
               </p>
-              <p className="text-[#5a5a6e] text-base leading-relaxed mb-5">
+              <p className="text-black/65 text-base leading-relaxed mb-5">
                 Dr. Yang will spend time with you to discuss, diagnose, and truly understand your
                 condition so that it can be properly treated. This level of personalized care is why
                 patients keep coming back. It is a level of medical attention that everybody deserves:
                 professional, affordable, and genuinely personal.
               </p>
-              <p className="text-[#5a5a6e] text-base leading-relaxed mb-10">
+              <p className="text-black/65 text-base leading-relaxed mb-10">
                 Educated in chemistry and medicine at the world-renowned Johns Hopkins University,
                 he earned his medical degree at Wake Forest University School of Medicine and
                 completed his internal medicine residency training at the University of Washington.
@@ -202,7 +202,7 @@ export default function AboutPageClient() {
       </section>
 
       {/* ── Staff Section ── */}
-      <section className="py-24 lg:py-32 bg-[#fff8ed]">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
@@ -213,21 +213,21 @@ export default function AboutPageClient() {
                 Our Team
               </span>
               <h2
-                className="text-[#6ba6c5] font-black text-balance mb-6"
+                className="text-black font-black text-balance mb-6"
                 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', lineHeight: 1.1 }}
               >
                 A Team That Genuinely Cares
               </h2>
-              <p className="text-[#5a5a6e] text-base leading-relaxed mb-5">
+              <p className="text-black/65 text-base leading-relaxed mb-5">
                 Our back office staff includes an exceptionally well-trained group of medical
                 assistants who are trained to care for and treat patients of all ages. Our goal is
                 to make your visit as comfortable as possible and give you the very best care and
                 treatment — not only while you are with us, but after you leave our office as well.
               </p>
-              <p className="text-[#5a5a6e] text-base leading-relaxed mb-10">
+              <p className="text-black/65 text-base leading-relaxed mb-10">
                 If you have any questions about scheduling your appointment, medication refills,
                 referrals to a specialist, or any other issues — contact us right away. All of our
-                staff are fluent in <strong className="text-[#6ba6c5]">English and Korean</strong> and
+                staff are fluent in <strong className="text-black">English and Korean</strong> and
                 ready to help.
               </p>
 

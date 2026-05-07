@@ -205,7 +205,7 @@ export default function ServicesPageClient() {
   const SelectedIcon = selected?.icon
 
   return (
-    <main className="bg-[#fff8ed] min-h-screen">
+    <main className="bg-white min-h-screen">
 
       {/* Hero */}
       <section className="bg-[#6ba6c5] relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-28">
@@ -343,7 +343,7 @@ export default function ServicesPageClient() {
       {selected && SelectedIcon && (
         <section
           ref={detailRef}
-          className="bg-[#fff8ed] py-16 lg:py-20 scroll-mt-32"
+          className="bg-white py-16 lg:py-20 scroll-mt-32"
           aria-live="polite"
         >
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -359,7 +359,7 @@ export default function ServicesPageClient() {
                       <span className="text-[#d52128] text-xs font-bold uppercase tracking-widest font-[family-name:var(--font-inter)]">
                         {selected.category}
                       </span>
-                      <h2 className="text-[#6ba6c5] font-black text-2xl lg:text-3xl leading-tight">
+                      <h2 className="text-black font-black text-2xl lg:text-3xl leading-tight">
                         {selected.title}
                       </h2>
                     </div>
@@ -386,20 +386,20 @@ export default function ServicesPageClient() {
                   />
                 </div>
 
-                <p className="text-[#6ba6c5]/70 text-base leading-relaxed mb-8">
+                <p className="text-black/65 text-base leading-relaxed mb-8">
                   {selected.description}
                 </p>
 
                 {/* What's Included */}
                 <div className="mb-8">
-                  <h3 className="text-[#6ba6c5] font-bold text-sm uppercase tracking-widest mb-4 font-[family-name:var(--font-inter)]">
+                  <h3 className="text-black font-bold text-sm uppercase tracking-widest mb-4 font-[family-name:var(--font-inter)]">
                     What&apos;s Included
                   </h3>
                   <ul className="flex flex-col gap-3">
                     {selected.details.map((d) => (
                       <li key={d} className="flex items-start gap-3">
                         <CheckCircle size={16} className="text-[#d52128] mt-0.5 shrink-0" />
-                        <span className="text-[#6ba6c5]/70 text-sm leading-relaxed font-[family-name:var(--font-inter)]">
+                        <span className="text-black/65 text-sm leading-relaxed font-[family-name:var(--font-inter)]">
                           {d}
                         </span>
                       </li>

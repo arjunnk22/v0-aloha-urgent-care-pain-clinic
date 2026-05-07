@@ -142,7 +142,7 @@ export default function ContactPageClient() {
       </section>
 
       {/* Map + Info + Form */}
-      <section className="bg-[#fff8ed] py-20 lg:py-28">
+      <section className="bg-white py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12 xl:gap-16">
 
@@ -152,7 +152,7 @@ export default function ContactPageClient() {
               {/* Contact details */}
               <div className="flex flex-col gap-6">
                 <h2
-                  className="text-[#6ba6c5] font-black"
+                  className="text-black font-black"
                   style={{ fontSize: 'clamp(1.5rem, 2.5vw, 2rem)', lineHeight: 1.15 }}
                 >
                   Find Us in <span className="text-[#d52128]">Waikiki</span>

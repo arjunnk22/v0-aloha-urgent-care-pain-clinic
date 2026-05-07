@@ -30,22 +30,22 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-10">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
           <div className="sm:col-span-2 lg:col-span-1">
-            <a href="#" aria-label="Aloha Urgent Care Home">
+            <a href="#" aria-label="Aloha Urgent Care Home" className="flex items-center gap-2 mb-5">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/F91CcJU9toaa1iV82D7dH-MscWNGIt4RPhR754PLoxdPaZ4Bqgg6.png"
+                alt=""
+                aria-hidden="true"
+                className="w-8 h-auto opacity-80 shrink-0"
+              />
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/kDkGSIGVaDqgM66OUvpuw-Kgy6eBKlvfHemyaiYAuT7yhOPpmNF8.png"
                 alt="Aloha Urgent Care & Pain Clinic"
                 width={150}
                 height={48}
-                className="h-11 w-auto object-contain mb-5"
+                className="h-11 w-auto object-contain"
               />
             </a>
             <div className="flex items-center gap-3 mb-3">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/F91CcJU9toaa1iV82D7dH-MscWNGIt4RPhR754PLoxdPaZ4Bqgg6.png"
-                alt=""
-                aria-hidden="true"
-                className="w-8 h-auto opacity-70"
-              />
               <span className="text-[#0d2d3a]/50 text-xs uppercase tracking-[0.25em] font-[family-name:var(--font-inter)]">
                 Elevate Your Health
               </span>

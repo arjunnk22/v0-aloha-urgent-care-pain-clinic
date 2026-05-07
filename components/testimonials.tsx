@@ -157,7 +157,7 @@ export default function Testimonials() {
               Patient Stories
             </span>
             <h2
-              className="text-[#0d2d3a] font-black text-balance"
+              className="text-white font-black text-balance"
               style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.1 }}
             >
               Real Patients,{' '}

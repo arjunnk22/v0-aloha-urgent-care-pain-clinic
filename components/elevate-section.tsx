@@ -81,14 +81,14 @@ export default function ElevateSection() {
           </span>
 
           <h2
-            className="text-[#0d2d3a] font-black text-balance leading-none mb-6"
+            className="text-black font-black text-balance leading-none mb-6"
             style={{ fontSize: 'clamp(2.8rem, 6vw, 5rem)', lineHeight: 1.0 }}
           >
             Elevate<br />
             <span className="text-[#d52128]">Your Health</span>
           </h2>
 
-          <p className="text-[#0d2d3a]/65 text-lg leading-relaxed mb-10 max-w-xl">
+          <p className="text-black/65 text-lg leading-relaxed mb-10 max-w-xl">
             Just as a hot air balloon rises from the ground and soars into the sky, we lift you
             above the obstacles and frustrations of traditional urgent care — long waits, stressful
             atmosphere, inefficient and limited medical services, lack of communication, and hidden costs.

@@ -42,18 +42,18 @@ const columns = [
 
 export default function Positioning() {
   return (
-    <section className="bg-[#fff8ed] py-24 lg:py-32 relative overflow-hidden">
+    <section className="bg-white py-24 lg:py-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
           <span className="inline-block text-[#d52128] text-xs font-bold uppercase tracking-widest mb-4 font-[family-name:var(--font-inter)]">
             Our Positioning
           </span>
-          <h2 className="text-[#6ba6c5] font-black text-balance" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.1 }}>
+          <h2 className="text-black font-black text-balance" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.1 }}>
             Not Standard Urgent Care.
             <br />
             <span className="text-[#d52128]">Healthcare, Redefined.</span>
           </h2>
-          <p className="mt-5 text-[#5a5a6e] text-base leading-relaxed">
+          <p className="mt-5 text-black/65 text-base leading-relaxed">
             We are not competing on insurance. We are competing on experience, speed,
             accessibility, and quality of care.
           </p>
@@ -66,7 +66,7 @@ export default function Positioning() {
               className={`rounded-sm p-8 border flex flex-col gap-6 ${
                 col.highlight
                   ? 'bg-[#6ba6c5] border-[#d52128]/40 relative overflow-hidden'
-                  : 'bg-[#fff8ed] border-[#6ba6c5]/10'
+                  : 'bg-white border-black/8'
               }`}
             >
               {col.highlight && (

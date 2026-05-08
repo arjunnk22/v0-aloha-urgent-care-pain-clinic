@@ -17,14 +17,6 @@ const slides = [
     alt: 'Aloha Urgent Care welcoming clinic interior',
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/YoOGcmuxlVY3u6vJRP2NP-jI34t3YoVKIk3mqN78f7X8jFQqeZCK.jpg',
-    alt: 'Dr. Yang and staff member at the front desk',
-  },
-  {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/yM8UZ8rCpCrw6L2YjUQcg-8AqCrsvAuWbqyXQQDLy38n89BVxngw.jpg',
-    alt: 'Dr. Yang with a happy young family patient',
-  },
-  {
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/WBCG4XEldEPHquzmrOLSJ-aG8Ty3RwbMIUWIdUkHz6zOQ56rVlD6.jpg',
     alt: 'International Market Place entrance, Waikiki',
   },
@@ -82,33 +74,32 @@ export default function Hero() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-[#fff8ed]"
+      className="relative w-full overflow-hidden bg-white"
       aria-label="Hero section"
     >
       {/* Red top bar */}
       <div className="absolute top-0 left-0 w-full h-1 bg-[#d52128] z-20" aria-hidden="true" />
 
       {/* TOP — Text content */}
-      <div className="bg-[#fff8ed] pt-24 pb-8 px-6 md:px-14 lg:px-20">
+      <div className="bg-white pt-24 pb-8 px-6 md:px-14 lg:px-20">
         <div ref={contentRef} className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-end gap-8 lg:gap-16">
 
           {/* Heading block */}
           <div className="flex-1">
-            <div className="inline-flex items-center gap-2 bg-[#6ba6c5]/12 border border-[#6ba6c5]/30 rounded-sm px-4 py-2 mb-5">
+            <div className="inline-flex items-center gap-2 bg-black/5 border border-black/15 rounded-sm px-4 py-2 mb-5">
               <MapPin size={13} className="text-[#d52128]" />
-              <span className="text-[#6ba6c5] text-xs font-semibold uppercase tracking-widest font-[family-name:var(--font-inter)]">
+              <span className="text-black text-xs font-semibold uppercase tracking-widest font-[family-name:var(--font-inter)]">
                 International Market Place, Level 2 — Waikiki, HI
               </span>
             </div>
             <h1
-              className="text-[#6ba6c5] font-black text-balance leading-none mb-4"
+              className="text-[#d52128] font-black text-balance leading-none mb-4 font-[family-name:var(--font-quicksand)]"
               style={{ fontSize: 'clamp(2rem, 4.5vw, 3.6rem)', lineHeight: 1.08 }}
             >
-              Aloha Urgent Care{' '}
-              <span className="text-[#d52128]">&amp; Pain Clinic</span>
+              Aloha Urgent Care &amp; Pain Clinic
             </h1>
             <p
-              className="text-[#6ba6c5]/75 font-semibold text-balance"
+              className="text-black font-semibold text-balance"
               style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.15rem)', lineHeight: 1.5 }}
             >
               Healthcare Made Simple, Thorough &amp; Accessible
@@ -127,21 +118,21 @@ export default function Hero() {
               </a>
               <a
                 href="/services"
-                className="inline-flex items-center justify-center gap-2 border border-[#6ba6c5]/40 hover:border-[#6ba6c5] bg-transparent hover:bg-[#6ba6c5]/10 text-[#6ba6c5] font-semibold px-7 py-3.5 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
+                className="inline-flex items-center justify-center gap-2 border border-black/20 hover:border-black/50 bg-transparent hover:bg-black/5 text-black hover:text-black font-semibold px-7 py-3.5 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
               >
                 View Services
               </a>
             </div>
             <div className="flex flex-wrap gap-x-5 gap-y-2">
-              <div className="flex items-center gap-2 text-[#6ba6c5]/65 text-xs font-[family-name:var(--font-inter)]">
+              <div className="flex items-center gap-2 text-black text-xs font-[family-name:var(--font-inter)]">
                 <Clock size={13} className="text-[#d52128] shrink-0" />
                 <span>Open 6 Days — Until 11 PM</span>
               </div>
-              <div className="flex items-center gap-2 text-[#6ba6c5]/65 text-xs font-[family-name:var(--font-inter)]">
+              <div className="flex items-center gap-2 text-black text-xs font-[family-name:var(--font-inter)]">
                 <ShieldCheck size={13} className="text-[#d52128] shrink-0" />
                 <span>Board-Certified Physicians</span>
               </div>
-              <div className="flex items-center gap-2 text-[#6ba6c5]/65 text-xs font-[family-name:var(--font-inter)]">
+              <div className="flex items-center gap-2 text-black text-xs font-[family-name:var(--font-inter)]">
                 <Users size={13} className="text-[#d52128] shrink-0" />
                 <span>All Ages Welcome</span>
               </div>
@@ -152,15 +143,15 @@ export default function Hero() {
       </div>
 
       {/* Stats strip */}
-      <div className="bg-[#fff8ed] px-6 md:px-14 lg:px-20 pb-6">
+      <div className="bg-white px-6 md:px-14 lg:px-20 pb-6">
         <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-3">
           {stats.map((s) => (
             <div
               key={s.value}
-              className="bg-[#6ba6c5]/10 border border-[#6ba6c5]/20 px-4 py-3 rounded-sm"
+              className="bg-black/4 border border-black/10 px-4 py-3 rounded-sm"
             >
               <p className="text-[#d52128] font-black text-sm leading-tight">{s.value}</p>
-              <p className="text-[#6ba6c5]/60 text-xs mt-0.5 uppercase tracking-widest font-[family-name:var(--font-inter)]">
+              <p className="text-black text-xs mt-0.5 uppercase tracking-widest font-[family-name:var(--font-inter)]">
                 {s.label}
               </p>
             </div>
@@ -169,7 +160,7 @@ export default function Hero() {
       </div>
 
       {/* BOTTOM — Slideshow banner */}
-      <div className="relative w-full h-64 sm:h-80 md:h-96 overflow-hidden">
+      <div className="relative w-full h-80 sm:h-96 md:h-[28rem] lg:h-[32rem] overflow-hidden">
 
         {slides.map((slide, i) => (
           <div
@@ -190,14 +181,14 @@ export default function Hero() {
         <button
           onClick={prev}
           aria-label="Previous image"
-          className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-[#fff8ed]/80 hover:bg-[#fff8ed] flex items-center justify-center shadow-md transition-all duration-200"
+          className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow-md transition-all duration-200"
         >
           <ChevronLeft size={18} className="text-[#6ba6c5]" />
         </button>
         <button
           onClick={next}
           aria-label="Next image"
-          className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-[#fff8ed]/80 hover:bg-[#fff8ed] flex items-center justify-center shadow-md transition-all duration-200"
+          className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow-md transition-all duration-200"
         >
           <ChevronRight size={18} className="text-[#6ba6c5]" />
         </button>

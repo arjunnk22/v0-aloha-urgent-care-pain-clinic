@@ -6,7 +6,7 @@ import ServicesPageClient from '@/components/services-page/services-page-client'
 export const metadata: Metadata = {
   title: 'Services | Aloha Urgent Care & Pain Clinic — Waikiki, Honolulu',
   description:
-    'Explore all services at Aloha Urgent Care & Pain Clinic — urgent care visits, lab testing, minor procedures, pain management, IV therapy, wound care, respiratory treatments, on-site medications, and weight loss programs. Physician-led, one visit.',
+    'Explore all services at Aloha Urgent Care & Pain Clinic — urgent care visits, lab testing, procedures, pain management, IV therapy, wound care, respiratory treatments, on-site medications, and weight loss programs. Physician-led, one visit.',
   alternates: {
     canonical: 'https://alohaurgentcare.com/services',
   },

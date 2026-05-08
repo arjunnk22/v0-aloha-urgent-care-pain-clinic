@@ -27,7 +27,7 @@ const reasons = [
   'IV Therapy',
   'Lab Testing',
   'Wound Care',
-  'Minor Procedure',
+  'Procedure',
   'Respiratory Treatment',
   'Weight Loss Program',
   'Advanced Medical Treatment',
@@ -71,18 +71,18 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-[#fff8ed] py-24 lg:py-32">
+    <section id="contact" className="bg-white py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-5 gap-16">
           <div className="lg:col-span-2 flex flex-col">
             <span className="inline-block text-[#d52128] text-xs font-bold uppercase tracking-widest mb-4 font-[family-name:var(--font-inter)]">
               Get In Touch
             </span>
-            <h2 className="text-[#6ba6c5] font-black text-balance mb-6" style={{ fontSize: 'clamp(1.9rem, 3.5vw, 2.8rem)', lineHeight: 1.1 }}>
+            <h2 className="text-black font-black text-balance mb-6" style={{ fontSize: 'clamp(1.9rem, 3.5vw, 2.8rem)', lineHeight: 1.1 }}>
               Book Your Visit<br />
               <span className="text-[#d52128]">Today</span>
             </h2>
-            <p className="text-[#5a5a6e] text-sm leading-relaxed mb-10">
+            <p className="text-black text-sm leading-relaxed mb-10">
               Ready to get care? Fill out the form and our team will confirm your appointment.
               Walk-ins also welcome — no appointment required. We serve locals, visitors,
               families, and patients of all ages.
@@ -98,8 +98,8 @@ export default function Contact() {
                   <Phone size={17} className="text-[#d52128] group-hover:text-[#fff8ed] transition-colors" />
                 </div>
                 <div>
-                  <p className="text-[#6ba6c5] font-semibold text-sm">(808) 342-6305</p>
-                  <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">Call us anytime</p>
+                  <p className="text-black font-semibold text-sm">(808) 342-6305</p>
+                  <p className="text-black text-xs font-[family-name:var(--font-inter)]">Call us anytime</p>
                 </div>
               </a>
 
@@ -109,11 +109,11 @@ export default function Contact() {
                 aria-label="Email Aloha Urgent Care"
               >
                 <div className="w-11 h-11 bg-[#d52128]/10 rounded-sm flex items-center justify-center shrink-0 group-hover:bg-[#d52128] transition-colors">
-                  <Mail size={17} className="text-[#d52128] group-hover:text-[#fff8ed] transition-colors" />
+                  <Mail size={17} className="text-[#d52128] group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <p className="text-[#6ba6c5] font-semibold text-sm">Send us an email</p>
-                  <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">We reply within a few hours</p>
+                  <p className="text-black font-semibold text-sm">Send us an email</p>
+                  <p className="text-black text-xs font-[family-name:var(--font-inter)]">We reply within a few hours</p>
                 </div>
               </a>
 
@@ -122,8 +122,8 @@ export default function Contact() {
                   <MapPin size={17} className="text-[#d52128]" />
                 </div>
                 <div>
-                  <p className="text-[#6ba6c5] font-semibold text-sm">International Market Place, Level 2</p>
-                  <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">Waikiki, Honolulu, HI</p>
+                  <p className="text-black font-semibold text-sm">International Market Place, Level 2</p>
+                  <p className="text-black text-xs font-[family-name:var(--font-inter)]">Waikiki, Honolulu, HI</p>
                 </div>
               </div>
 
@@ -132,9 +132,9 @@ export default function Contact() {
                   <Clock size={17} className="text-[#d52128]" />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <p className="text-[#6ba6c5] font-semibold text-sm">Hours of Operation</p>
-                  <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">Mon – Thurs, Sat: 9:30 AM – 11:00 PM</p>
-                  <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">Fri: 4:30 PM – 11:00 PM</p>
+                  <p className="text-black font-semibold text-sm">Hours of Operation</p>
+                  <p className="text-black text-xs font-[family-name:var(--font-inter)]">Mon – Thurs, Sat: 9:30 AM – 11:00 PM</p>
+                  <p className="text-black text-xs font-[family-name:var(--font-inter)]">Fri: 4:30 PM – 11:00 PM</p>
                   <p className="text-[#d52128] text-xs font-semibold font-[family-name:var(--font-inter)]">Sun: Closed</p>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function Contact() {
           </div>
 
           <div className="lg:col-span-3">
-            <div className="bg-[#6ba6c5] rounded-sm p-8 lg:p-10">
+            <div className="bg-[#d52128] rounded-sm p-8 lg:p-10">
               {status === 'success' ? (
                 <div className="flex flex-col items-center justify-center text-center py-12 gap-4">
                   <CheckCircle size={48} className="text-[#d52128]" />
@@ -237,9 +237,9 @@ export default function Contact() {
                       onChange={handleChange}
                       className="bg-[#fff8ed]/8 border border-[#fff8ed]/12 text-[#fff8ed] rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-[#d52128] transition-colors appearance-none"
                     >
-                      <option value="" disabled className="bg-[#6ba6c5] text-[#fff8ed]">Select a service</option>
+                      <option value="" disabled className="bg-[#d52128] text-white">Select a service</option>
                       {reasons.map((r) => (
-                        <option key={r} value={r} className="bg-[#6ba6c5] text-[#fff8ed]">{r}</option>
+                        <option key={r} value={r} className="bg-[#d52128] text-white">{r}</option>
                       ))}
                     </select>
                   </div>

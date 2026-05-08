@@ -27,7 +27,7 @@ export default function BlogPageClient() {
   const sidebarPicks = articles.filter((a) => !a.featured).slice(0, 4)
 
   return (
-    <div className="bg-[#fff8ed] min-h-screen">
+    <div className="bg-white min-h-screen">
       {/* Page Hero */}
       <section className="bg-[#6ba6c5] pt-32 pb-16 px-6 lg:px-8 relative overflow-hidden">
         {/* Background image — very subtle */}
@@ -47,7 +47,7 @@ export default function BlogPageClient() {
               <span className="inline-block text-[#d52128] text-xs font-bold uppercase tracking-widest mb-4 font-[family-name:var(--font-inter)]">
                 Health Resources
               </span>
-              <h1 className="text-[#0d2d3a] text-4xl lg:text-6xl font-black leading-tight text-balance">
+              <h1 className="text-white text-4xl lg:text-6xl font-black leading-tight text-balance">
                 The Aloha<br />
                 <span className="text-[#d52128]">Health Blog</span>
               </h1>
@@ -60,7 +60,7 @@ export default function BlogPageClient() {
       </section>
 
       {/* Sticky Search + Filter Bar */}
-      <div className="sticky top-20 z-40 bg-[#fff8ed] border-b border-[#e8d9c8] shadow-sm shadow-[#6ba6c5]/5">
+      <div className="sticky top-20 z-40 bg-white border-b border-gray-100 shadow-sm shadow-black/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
           {/* Search */}
           <div className="relative flex-1 max-w-sm">

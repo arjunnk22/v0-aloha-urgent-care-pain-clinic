@@ -44,8 +44,8 @@ export default function ElevateSection() {
         backgroundPosition: 'center top',
       }}
     >
-      {/* Cream overlay for readability */}
-      <div className="absolute inset-0 bg-[#fff8ed]/90 pointer-events-none" aria-hidden="true" />
+      {/* Light overlay for readability — reduced opacity to show clouds */}
+      <div className="absolute inset-0 bg-white/60 pointer-events-none" aria-hidden="true" />
 
       {/* Subtle red top accent line */}
       <div className="absolute top-0 left-0 w-full h-[3px] bg-[#d52128] z-10" aria-hidden="true" />
@@ -81,14 +81,14 @@ export default function ElevateSection() {
           </span>
 
           <h2
-            className="text-[#0d2d3a] font-black text-balance leading-none mb-6"
+            className="text-black font-black text-balance leading-none mb-6"
             style={{ fontSize: 'clamp(2.8rem, 6vw, 5rem)', lineHeight: 1.0 }}
           >
             Elevate<br />
             <span className="text-[#d52128]">Your Health</span>
           </h2>
 
-          <p className="text-[#0d2d3a]/65 text-lg leading-relaxed mb-10 max-w-xl">
+          <p className="text-black text-lg leading-relaxed mb-10 max-w-xl">
             Just as a hot air balloon rises from the ground and soars into the sky, we lift you
             above the obstacles and frustrations of traditional urgent care — long waits, stressful
             atmosphere, inefficient and limited medical services, lack of communication, and hidden costs.
@@ -97,14 +97,14 @@ export default function ElevateSection() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <a
               href="#contact"
-              className="group inline-flex items-center gap-3 bg-[#d52128] hover:bg-[#b91b21] text-[#fff8ed] font-bold px-8 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
+              className="group inline-flex items-center gap-3 bg-[#d52128] hover:bg-[#b91b21] text-white font-bold px-8 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
             >
               Book Your Visit
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />
             </a>
             <a
               href="/services"
-              className="text-[#0d2d3a]/70 hover:text-[#d52128] font-semibold text-sm underline underline-offset-4 transition-colors duration-200 font-[family-name:var(--font-inter)]"
+              className="text-black hover:text-[#d52128] font-semibold text-sm underline underline-offset-4 transition-colors duration-200 font-[family-name:var(--font-inter)]"
             >
               View All Services
             </a>

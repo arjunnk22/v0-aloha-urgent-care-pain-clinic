@@ -31,9 +31,9 @@ const services = [
   },
   {
     icon: Scissors,
-    title: 'Minor Procedures',
+    title: 'Procedures',
     description:
-      'Laceration repair including cosmetically sensitive areas, abscess drainage, foreign body removal, ear and eye irrigation, and splinting after injuries in all types of activities such as swimming, surfing, hiking and biking — all handled in clinic.',
+      'Wound repair with sutures and staples, abscess drainage, foreign body removal, ear and eye irrigation, and splinting after injuries in all types of activities such as swimming, surfing, hiking and biking — all handled in clinic.',
     tag: 'In-Clinic',
   },
   {
@@ -47,21 +47,21 @@ const services = [
     icon: Droplets,
     title: 'IV Therapy',
     description:
-      'Hydration, electrolyte therapy, vitamin infusions, and migraine relief — administered by medical professionals. IV access is quick and you take your time to receive all the medications and fluids that you need to feel better.',
+      'Hydration, electrolyte and vitamin replacement, antibiotic injections, and migraine relief — administered by medical professionals. IV access is quick and you take your time to receive all the medications and fluids that you need to feel better.',
     tag: 'Physician-Led',
   },
   {
     icon: Wind,
     title: 'Respiratory Treatments',
     description:
-      'Nebulizer and oxygen treatments to open up the airways and improve oxygen absorption. Breathe easier when you have asthma, croup, or pneumonia.',
+      'Nebulizer and oxygen treatments to open up the airways and improve oxygen absorption. Breathe easier when you have croup, bronchitis, asthma, or pneumonia.',
     tag: 'Immediate Relief',
   },
   {
     icon: Heart,
     title: 'Wound Care',
     description:
-      'Expert wound assessment and treatment for accidental injuries in the outdoors of Hawaii — sea urchin, coral rocks, jellyfish as well as inside your hotel room. Irrigation, suture placement, wound care instructions and supplies, and follow-up care.',
+      'Expert wound assessment for accidental injuries in the outdoors of Hawaii — sea urchin, coral rocks, jellyfish as well as inside your hotel room. Wound treatment with pain relief, irrigation, and disinfecting. Also, wound care instructions and supplies with follow-up care.',
     tag: 'Advanced Repair',
   },
   {
@@ -95,8 +95,8 @@ export default function Services() {
         backgroundPosition: 'center top',
       }}
     >
-      {/* Blue tinted overlay — keeps ocean visible, dark text for readability */}
-      <div className="absolute inset-0 bg-[#6ba6c5]/88 pointer-events-none" aria-hidden="true" />
+      {/* White overlay — clean background for readability */}
+      <div className="absolute inset-0 bg-white/95 pointer-events-none" aria-hidden="true" />
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Header */}
@@ -106,7 +106,7 @@ export default function Services() {
               Our Services
             </span>
             <h2
-              className="text-[#0d2d3a] font-black text-balance"
+              className="text-black font-black text-balance"
               style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.1 }}
             >
               Everything Handled
@@ -114,14 +114,14 @@ export default function Services() {
               <span className="text-[#d52128]">In One Visit</span>
             </h2>
           </div>
-          <p className="text-[#0d2d3a]/60 text-base leading-relaxed max-w-md lg:text-right">
+          <p className="text-black text-base leading-relaxed max-w-md lg:text-right">
             Comprehensive care — diagnosis, treatment, procedures, diagnostic testing, and
             prescriptions all under one roof, all in a single visit.
           </p>
         </div>
 
         {/* Accordion List */}
-        <div className="divide-y divide-[#0d2d3a]/10">
+        <div className="divide-y divide-black/10">
           {services.map((service, i) => {
             const Icon = service.icon
             const isOpen = activeIndex === i
@@ -134,7 +134,7 @@ export default function Services() {
                 >
                   {/* Number */}
                   <span
-                    className="shrink-0 font-black tabular-nums text-[#0d2d3a]/20 group-hover:text-[#d52128]/40 transition-colors duration-300 select-none"
+                    className="shrink-0 font-black tabular-nums text-black/20 group-hover:text-[#d52128]/40 transition-colors duration-300 select-none"
                     style={{ fontSize: 'clamp(1.1rem, 2vw, 1.5rem)', lineHeight: 1, width: '2.5rem' }}
                   >
                     {String(i + 1).padStart(2, '0')}
@@ -143,7 +143,7 @@ export default function Services() {
                   {/* Icon */}
                   <div
                     className={`shrink-0 w-10 h-10 rounded-sm flex items-center justify-center transition-all duration-300 ${
-                      isOpen ? 'bg-[#d52128]' : 'bg-[#0d2d3a]/8 group-hover:bg-[#d52128]/20'
+                      isOpen ? 'bg-[#d52128]' : 'bg-black/5 group-hover:bg-[#d52128]/20'
                     }`}
                   >
                     <Icon
@@ -157,15 +157,15 @@ export default function Services() {
                   {/* Title */}
                   <span
                     className={`flex-1 font-bold transition-colors duration-300 ${
-                      isOpen ? 'text-[#0d2d3a]' : 'text-[#0d2d3a]/70 group-hover:text-[#0d2d3a]'
+                      isOpen ? 'text-black' : 'text-black/70 group-hover:text-black'
                     }`}
-                    style={{ fontSize: 'clamp(1rem, 2vw, 1.25rem)' }}
+                    style={{ fontSize: 'clamp(1.15rem, 2.5vw, 1.5rem)' }}
                   >
                     {service.title}
                   </span>
 
                   {/* Tag — hidden on mobile */}
-                  <span className="hidden md:block shrink-0 text-xs font-semibold text-[#0d2d3a]/40 group-hover:text-[#d52128]/70 transition-colors duration-300 font-[family-name:var(--font-inter)] uppercase tracking-widest">
+                  <span className="hidden md:block shrink-0 text-xs font-semibold text-black/40 group-hover:text-[#d52128]/70 transition-colors duration-300 font-[family-name:var(--font-inter)] uppercase tracking-widest">
                     {service.tag}
                   </span>
 
@@ -174,7 +174,7 @@ export default function Services() {
                     className={`shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 ${
                         isOpen
                         ? 'border-[#d52128] bg-[#d52128] rotate-0'
-                        : 'border-[#0d2d3a]/20 group-hover:border-[#d52128]/50 rotate-0'
+                        : 'border-black/20 group-hover:border-[#d52128]/50 rotate-0'
                     }`}
                   >
                     <ArrowUpRight
@@ -182,7 +182,7 @@ export default function Services() {
                       className={`transition-all duration-300 ${
                           isOpen
                           ? 'text-white rotate-90'
-                          : 'text-[#0d2d3a]/40 group-hover:text-[#d52128]'
+                          : 'text-black/40 group-hover:text-[#d52128]'
                       }`}
                     />
                   </div>
@@ -195,7 +195,7 @@ export default function Services() {
                   }`}
                 >
                   <div className="pb-7 pl-[calc(2.5rem+2.5rem+1.5rem)] lg:pl-[calc(2.5rem+2.5rem+2.5rem)] flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-                    <p className="text-[#0d2d3a]/65 text-sm leading-relaxed max-w-xl">
+                    <p className="text-black text-base leading-relaxed max-w-xl">
                       {service.description}
                     </p>
                     <a
@@ -213,13 +213,13 @@ export default function Services() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-14 pt-10 border-t border-[#0d2d3a]/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          <p className="text-[#0d2d3a]/50 text-sm font-[family-name:var(--font-inter)]">
+        <div className="mt-14 pt-10 border-t border-black/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <p className="text-black text-sm font-[family-name:var(--font-inter)]">
             All 9 services available in a single visit — comprehensive care, start to finish.
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2.5 bg-[#d52128] text-white text-sm font-bold px-6 py-3 hover:bg-[#d52128]/90 transition-colors font-[family-name:var(--font-inter)]"
+            className="inline-flex items-center gap-2.5 bg-[#d52128] text-white text-sm font-bold px-6 py-3 hover:bg-[#b91b21] transition-colors font-[family-name:var(--font-inter)]"
           >
             Book Your Visit
             <ArrowUpRight size={15} />

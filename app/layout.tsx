@@ -24,7 +24,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Aloha Urgent Care & Pain Clinic | Physician-Led Urgent Care in Waikiki, Honolulu',
   description:
-    'Fast, physician-led urgent care in Waikiki, Honolulu. No long waits, transparent pricing, and comprehensive care including lab testing, IV therapy, pain management, and minor procedures — all in one visit.',
+    'Fast, physician-led urgent care in Waikiki, Honolulu. No long waits, transparent pricing, and comprehensive care including lab testing, IV therapy, pain management, and procedures — all in one visit.',
   keywords:
     'urgent care honolulu, waikiki urgent care, physician urgent care hawaii, walk-in clinic honolulu, pain clinic hawaii, IV therapy waikiki, urgent care no wait',
   metadataBase: new URL('https://alohaurgentcare.com'),
@@ -116,7 +116,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="bg-background">
+    <html lang="en" className="bg-white">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#6ba6c5" />
@@ -129,7 +129,7 @@ export default function RootLayout({
         <title>Aloha Urgent Care &amp; Pain Clinic | Physician-Led Urgent Care in Waikiki</title>
         <meta
           name="description"
-          content="Fast, physician-led urgent care in Waikiki, Honolulu. No long waits, transparent pricing, and comprehensive care including lab testing, IV therapy, pain management, and minor procedures — all in one visit."
+          content="Fast, physician-led urgent care in Waikiki, Honolulu. No long waits, transparent pricing, and comprehensive care including lab testing, IV therapy, pain management, and procedures — all in one visit."
         />
         <meta property="og:title" content="Aloha Urgent Care & Pain Clinic | Physician-Led Urgent Care in Waikiki" />
         <meta

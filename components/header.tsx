@@ -34,12 +34,12 @@ export default function Header() {
         <a href="/" className="flex items-center gap-3 shrink-0" aria-label="Aloha Urgent Care Home">
           {/* Hand-heart logo icon */}
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/F91CcJU9toaa1iV82D7dH-MscWNGIt4RPhR754PLoxdPaZ4Bqgg6.png"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hand%20holding%20the%20heart.JPEG-JEYsFayyP5t0FitMa0jJhlSvPCdnDP.jpeg"
             alt=""
             aria-hidden="true"
-            width={36}
-            height={36}
-            className="h-9 w-auto object-contain shrink-0"
+            width={40}
+            height={40}
+            className="h-10 w-auto object-contain shrink-0"
             priority
           />
           {/* Main wordmark logo */}

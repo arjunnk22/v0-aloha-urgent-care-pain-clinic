@@ -366,15 +366,15 @@ export default function ServicesPageClient() {
                   </div>
                   <button
                     onClick={() => setActiveService(null)}
-                    className="shrink-0 w-9 h-9 border border-[#6ba6c5]/15 hover:border-[#d52128] hover:bg-[#d52128]/5 flex items-center justify-center transition-all"
+                    className="shrink-0 w-9 h-9 border border-black/15 hover:border-[#d52128] hover:bg-[#d52128]/5 flex items-center justify-center transition-all"
                     aria-label="Close detail panel"
                   >
-                    <X size={16} className="text-[#6ba6c5]/50" />
+                    <X size={16} className="text-black/50" />
                   </button>
                 </div>
 
                 {/* Image */}
-                <div className="relative w-full h-64 lg:h-80 overflow-hidden mb-8 bg-[#6ba6c5]">
+                <div className="relative w-full h-64 lg:h-80 overflow-hidden mb-8 bg-gray-100">
                   <img
                     src={selected.image}
                     alt={selected.title}
@@ -399,7 +399,7 @@ export default function ServicesPageClient() {
                     {selected.details.map((d) => (
                       <li key={d} className="flex items-start gap-3">
                         <CheckCircle size={16} className="text-[#d52128] mt-0.5 shrink-0" />
-                        <span className="text-black/65 text-sm leading-relaxed font-[family-name:var(--font-inter)]">
+                        <span className="text-black text-sm leading-relaxed font-[family-name:var(--font-inter)]">
                           {d}
                         </span>
                       </li>
@@ -408,11 +408,11 @@ export default function ServicesPageClient() {
                 </div>
 
                 {/* Ideal For */}
-                <div className="bg-[#6ba6c5]/4 border-l-4 border-[#d52128] px-6 py-4">
-                  <p className="text-[#6ba6c5] font-bold text-xs uppercase tracking-widest mb-1 font-[family-name:var(--font-inter)]">
+                <div className="bg-black/5 border-l-4 border-[#d52128] px-6 py-4">
+                  <p className="text-black font-bold text-xs uppercase tracking-widest mb-1 font-[family-name:var(--font-inter)]">
                     Ideal For
                   </p>
-                  <p className="text-[#6ba6c5]/65 text-sm leading-relaxed font-[family-name:var(--font-inter)]">
+                  <p className="text-black text-sm leading-relaxed font-[family-name:var(--font-inter)]">
                     {selected.ideal}
                   </p>
                 </div>
@@ -421,23 +421,23 @@ export default function ServicesPageClient() {
               {/* Right: CTA Sidebar */}
               <div className="flex flex-col gap-6">
                 {/* Book Card */}
-                <div className="bg-[#6ba6c5] p-8 flex flex-col gap-5">
-                  <h3 className="text-[#fff8ed] font-black text-xl leading-tight">
+                <div className="bg-[#d52128] p-8 flex flex-col gap-5">
+                  <h3 className="text-white font-black text-xl leading-tight">
                     Ready to be seen?
                   </h3>
-                  <p className="text-[#fff8ed]/55 text-sm leading-relaxed font-[family-name:var(--font-inter)]">
+                  <p className="text-white/70 text-sm leading-relaxed font-[family-name:var(--font-inter)]">
                     Walk in or call ahead. Our physician team is ready to help — same day, no referral needed.
                   </p>
                   <a
                     href="/#contact"
-                    className="inline-flex items-center justify-center gap-2.5 bg-[#d52128] hover:bg-[#b91b21] text-[#fff8ed] font-bold px-6 py-3.5 transition-colors text-sm font-[family-name:var(--font-inter)]"
+                    className="inline-flex items-center justify-center gap-2.5 bg-white hover:bg-black/5 text-[#d52128] font-bold px-6 py-3.5 transition-colors text-sm font-[family-name:var(--font-inter)]"
                   >
                     Book Now
                     <ArrowUpRight size={15} />
                   </a>
                   <a
                     href="tel:+18083426305"
-                    className="inline-flex items-center justify-center gap-2.5 border border-[#fff8ed]/20 hover:border-[#fff8ed]/50 text-[#fff8ed]/70 hover:text-[#fff8ed] px-6 py-3.5 transition-all text-sm font-[family-name:var(--font-inter)]"
+                    className="inline-flex items-center justify-center gap-2.5 border border-white/30 hover:border-white/60 text-white/80 hover:text-white px-6 py-3.5 transition-all text-sm font-[family-name:var(--font-inter)]"
                   >
                     <Phone size={14} />
                     (808) 342-6305
@@ -445,32 +445,32 @@ export default function ServicesPageClient() {
                 </div>
 
                 {/* Hours Card */}
-                <div className="border border-[#6ba6c5]/10 p-6 flex flex-col gap-3">
+                <div className="border border-black/10 p-6 flex flex-col gap-3">
                   <div className="flex items-center gap-2 mb-1">
                     <Clock size={15} className="text-[#d52128]" />
-                    <h4 className="text-[#6ba6c5] font-bold text-sm uppercase tracking-widest font-[family-name:var(--font-inter)]">
+                    <h4 className="text-black font-bold text-sm uppercase tracking-widest font-[family-name:var(--font-inter)]">
                       Hours
                     </h4>
                   </div>
                   <div className="flex flex-col gap-2 text-sm font-[family-name:var(--font-inter)]">
                     <div className="flex justify-between">
-                      <span className="text-[#6ba6c5]/50">Mon – Thurs, Sat</span>
-                      <span className="text-[#6ba6c5] font-semibold">9:30 AM – 11:00 PM</span>
+                      <span className="text-black">Mon – Thurs, Sat</span>
+                      <span className="text-black font-semibold">9:30 AM – 11:00 PM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-[#6ba6c5]/50">Friday</span>
-                      <span className="text-[#6ba6c5] font-semibold">4:30 PM – 11:00 PM</span>
+                      <span className="text-black">Friday</span>
+                      <span className="text-black font-semibold">4:30 PM – 11:00 PM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-[#6ba6c5]/50">Sunday</span>
+                      <span className="text-black">Sunday</span>
                       <span className="text-[#d52128] font-bold">Closed</span>
                     </div>
                   </div>
                 </div>
 
                 {/* All Services Nav */}
-                <div className="border border-[#6ba6c5]/10 p-6">
-                  <h4 className="text-[#6ba6c5] font-bold text-xs uppercase tracking-widest mb-4 font-[family-name:var(--font-inter)]">
+                <div className="border border-black/10 p-6">
+                  <h4 className="text-black font-bold text-xs uppercase tracking-widest mb-4 font-[family-name:var(--font-inter)]">
                     All Services
                   </h4>
                   <ul className="flex flex-col gap-2">
@@ -482,11 +482,11 @@ export default function ServicesPageClient() {
                             onClick={() => openService(i)}
                             className={`w-full flex items-center gap-3 px-3 py-2.5 text-left text-sm transition-all font-[family-name:var(--font-inter)] ${
                               activeService === i
-                                ? 'bg-[#d52128] text-[#fff8ed]'
-                                : 'text-[#6ba6c5]/60 hover:text-[#6ba6c5] hover:bg-[#6ba6c5]/5'
+                                ? 'bg-[#d52128] text-white'
+                                : 'text-black/60 hover:text-black hover:bg-black/5'
                             }`}
                           >
-                            <SIcon size={13} className={activeService === i ? 'text-[#fff8ed]' : 'text-[#d52128]'} />
+                            <SIcon size={13} className={activeService === i ? 'text-white' : 'text-[#d52128]'} />
                             {s.title}
                           </button>
                         </li>
@@ -501,14 +501,14 @@ export default function ServicesPageClient() {
       )}
 
       {/* How It Works */}
-      <section className="bg-[#fff8ed] py-20 lg:py-28 border-t border-[#6ba6c5]/8">
+      <section className="bg-white py-20 lg:py-28 border-t border-black/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl mb-14">
             <span className="inline-block text-[#d52128] text-xs font-bold uppercase tracking-widest mb-4 font-[family-name:var(--font-inter)]">
               What to Expect
             </span>
             <h2
-              className="text-[#6ba6c5] font-black text-balance"
+              className="text-black font-black text-balance"
               style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)', lineHeight: 1.1 }}
             >
               From Walk-In to{' '}
@@ -517,13 +517,13 @@ export default function ServicesPageClient() {
           </div>
           <div className="relative">
             {/* Connecting line */}
-            <div className="hidden lg:block absolute top-10 left-10 right-10 h-px bg-[#6ba6c5]/10" aria-hidden="true" />
-            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-[#6ba6c5]/8 border border-[#6ba6c5]/8">
+            <div className="hidden lg:block absolute top-10 left-10 right-10 h-px bg-black/10" aria-hidden="true" />
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-black/5 border border-black/10">
               {steps.map((step) => (
-                <div key={step.num} className="bg-[#fff8ed] p-8 flex flex-col gap-4">
+                <div key={step.num} className="bg-white p-8 flex flex-col gap-4">
                   <span className="text-[#d52128] font-black text-3xl leading-none">{step.num}</span>
-                  <h3 className="text-[#6ba6c5] font-bold text-base">{step.title}</h3>
-                  <p className="text-[#6ba6c5]/55 text-sm leading-relaxed font-[family-name:var(--font-inter)]">{step.desc}</p>
+                  <h3 className="text-black font-bold text-base">{step.title}</h3>
+                  <p className="text-black text-sm leading-relaxed font-[family-name:var(--font-inter)]">{step.desc}</p>
                 </div>
               ))}
             </div>
@@ -532,27 +532,27 @@ export default function ServicesPageClient() {
       </section>
 
       {/* Bottom CTA Banner */}
-      <section className="bg-[#d52128] py-16 lg:py-20">
+      <section className="bg-black py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div>
-            <h2 className="text-[#fff8ed] font-black text-2xl lg:text-3xl leading-tight text-balance">
+            <h2 className="text-white font-black text-2xl lg:text-3xl leading-tight text-balance">
               Not sure which service you need?
             </h2>
-            <p className="text-[#fff8ed]/70 text-base mt-2 font-[family-name:var(--font-inter)]">
+            <p className="text-white/70 text-base mt-2 font-[family-name:var(--font-inter)]">
               Walk in and our physician will assess you. We handle it from there.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4 shrink-0">
             <a
               href="/#contact"
-              className="inline-flex items-center gap-2.5 bg-[#fff8ed] hover:bg-white text-[#d52128] font-bold px-7 py-3.5 transition-colors text-sm font-[family-name:var(--font-inter)]"
+              className="inline-flex items-center gap-2.5 bg-[#d52128] hover:bg-[#b91b21] text-white font-bold px-7 py-3.5 transition-colors text-sm font-[family-name:var(--font-inter)]"
             >
               Book Now
               <ArrowUpRight size={15} />
             </a>
             <a
               href="tel:+18083426305"
-              className="inline-flex items-center gap-2.5 border border-[#fff8ed]/40 hover:border-[#fff8ed] text-[#fff8ed] px-7 py-3.5 transition-all text-sm font-[family-name:var(--font-inter)]"
+              className="inline-flex items-center gap-2.5 border border-white/40 hover:border-white text-white px-7 py-3.5 transition-all text-sm font-[family-name:var(--font-inter)]"
             >
               <Phone size={14} />
               Call Us

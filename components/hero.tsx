@@ -17,14 +17,6 @@ const slides = [
     alt: 'Aloha Urgent Care welcoming clinic interior',
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/YoOGcmuxlVY3u6vJRP2NP-jI34t3YoVKIk3mqN78f7X8jFQqeZCK.jpg',
-    alt: 'Dr. Yang and staff member at the front desk',
-  },
-  {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/yM8UZ8rCpCrw6L2YjUQcg-8AqCrsvAuWbqyXQQDLy38n89BVxngw.jpg',
-    alt: 'Dr. Yang with a happy young family patient',
-  },
-  {
     src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/WBCG4XEldEPHquzmrOLSJ-aG8Ty3RwbMIUWIdUkHz6zOQ56rVlD6.jpg',
     alt: 'International Market Place entrance, Waikiki',
   },

@@ -222,13 +222,6 @@ export default function WhyUs() {
 
         {/* Stats */}
         <div className="mt-16 border-t border-black/10 pt-12 relative">
-          <div className="absolute -top-16 right-0 w-24 opacity-10 pointer-events-none select-none" aria-hidden="true">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/F91CcJU9toaa1iV82D7dH-MscWNGIt4RPhR754PLoxdPaZ4Bqgg6.png"
-              alt=""
-              className="w-full h-auto"
-            />
-          </div>
           <p className="text-center text-black text-xs uppercase tracking-[0.3em] font-[family-name:var(--font-inter)] mb-10">
             Elevate Your Health
           </p>

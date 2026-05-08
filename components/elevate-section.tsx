@@ -44,8 +44,8 @@ export default function ElevateSection() {
         backgroundPosition: 'center top',
       }}
     >
-      {/* Cream overlay for readability */}
-      <div className="absolute inset-0 bg-[#fff8ed]/90 pointer-events-none" aria-hidden="true" />
+      {/* Light overlay for readability — reduced opacity to show clouds */}
+      <div className="absolute inset-0 bg-white/60 pointer-events-none" aria-hidden="true" />
 
       {/* Subtle red top accent line */}
       <div className="absolute top-0 left-0 w-full h-[3px] bg-[#d52128] z-10" aria-hidden="true" />

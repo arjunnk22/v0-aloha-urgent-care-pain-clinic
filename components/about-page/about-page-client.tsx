@@ -52,24 +52,7 @@ export default function AboutPageClient() {
           style={{ backgroundImage: 'radial-gradient(circle at 70% 40%, #d52128 0%, transparent 60%)' }}
           aria-hidden="true"
         />
-        {/* Balloon — decorative */}
-        <div
-          className="absolute right-8 lg:right-24 top-24 w-36 lg:w-56 opacity-20 pointer-events-none select-none"
-          style={{ animation: 'balloonRise 10s ease-in-out infinite' }}
-          aria-hidden="true"
-        >
-          <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/F91CcJU9toaa1iV82D7dH-MscWNGIt4RPhR754PLoxdPaZ4Bqgg6.png"
-            alt=""
-            className="w-full h-auto"
-          />
-        </div>
-        <style>{`
-          @keyframes balloonRise {
-            0%, 100% { transform: translateY(0px) rotate(-2deg); }
-            50% { transform: translateY(-20px) rotate(2deg); }
-          }
-        `}</style>
+
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <span className="inline-block text-[#d52128] text-xs font-bold uppercase tracking-widest mb-5 font-[family-name:var(--font-inter)]">
             Our Story

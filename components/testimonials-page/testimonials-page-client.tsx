@@ -160,36 +160,36 @@ function TestimonialCard({
       className={`flex flex-col gap-5 border rounded-sm p-7 transition-all duration-300 hover:border-[#d52128]/40 group ${
         featured
           ? 'bg-[#d52128] border-[#d52128]'
-          : 'bg-[#fff8ed]/3 border-[#fff8ed]/10 hover:bg-[#fff8ed]/5'
+          : 'bg-white border-black/10 hover:shadow-md'
       }`}
     >
       <div className="flex items-start justify-between gap-3">
         <StarRow count={rating} />
         <Quote
           size={20}
-          className={`shrink-0 ${featured ? 'text-[#fff8ed]/30' : 'text-[#d52128]/20'}`}
+          className={`shrink-0 ${featured ? 'text-white/30' : 'text-[#d52128]/20'}`}
           aria-hidden="true"
         />
       </div>
       <p
         className={`text-sm leading-relaxed flex-1 ${
-          featured ? 'text-[#fff8ed]' : 'text-[#fff8ed]/75'
+          featured ? 'text-white' : 'text-black'
         }`}
       >
         &ldquo;{text}&rdquo;
       </p>
       <div
         className={`flex items-end justify-between gap-3 pt-4 border-t ${
-          featured ? 'border-[#fff8ed]/20' : 'border-[#fff8ed]/8'
+          featured ? 'border-white/20' : 'border-black/10'
         }`}
       >
         <div>
-          <p className={`font-bold text-sm ${featured ? 'text-[#fff8ed]' : 'text-[#fff8ed]'}`}>
+          <p className={`font-bold text-sm ${featured ? 'text-white' : 'text-black'}`}>
             {name}
           </p>
           <p
             className={`text-xs mt-0.5 font-[family-name:var(--font-inter)] ${
-              featured ? 'text-[#fff8ed]/70' : 'text-[#fff8ed]/40'
+              featured ? 'text-white/70' : 'text-black/60'
             }`}
           >
             {location}
@@ -198,7 +198,7 @@ function TestimonialCard({
         <span
           className={`text-xs font-semibold px-2.5 py-1 rounded-sm font-[family-name:var(--font-inter)] shrink-0 ${
             featured
-              ? 'bg-[#fff8ed]/15 text-[#fff8ed]'
+              ? 'bg-white/15 text-white'
               : 'bg-[#d52128]/10 text-[#d52128]'
           }`}
         >
@@ -243,13 +243,13 @@ export default function TestimonialsPageClient() {
   const hasMore = visibleCount < filtered.length
 
   return (
-    <main className="bg-[#6ba6c5] min-h-screen">
+    <main className="bg-white min-h-screen">
 
       {/* Hero */}
-      <section className="bg-[#6ba6c5] pt-36 pb-20 relative overflow-hidden">
+      <section className="bg-white pt-36 pb-20 relative overflow-hidden border-b border-black/10">
         <div
           className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse 60% 50% at 80% 20%, rgba(213,33,40,0.07) 0%, transparent 60%)' }}
+          style={{ background: 'radial-gradient(ellipse 60% 50% at 80% 20%, rgba(213,33,40,0.05) 0%, transparent 60%)' }}
           aria-hidden="true"
         />
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
@@ -258,13 +258,13 @@ export default function TestimonialsPageClient() {
           </span>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
             <h1
-              className="text-[#fff8ed] font-black text-balance max-w-2xl"
+              className="text-black font-black text-balance max-w-2xl"
               style={{ fontSize: 'clamp(2.4rem, 5vw, 3.8rem)', lineHeight: 1.08 }}
             >
               Real Patients,{' '}
               <span className="text-[#d52128]">Real Results</span>
             </h1>
-            <p className="text-[#fff8ed]/50 text-base max-w-sm lg:text-right leading-relaxed font-[family-name:var(--font-inter)]">
+            <p className="text-black text-base max-w-sm lg:text-right leading-relaxed font-[family-name:var(--font-inter)]">
               Locals, visitors, and international travelers who trusted us with their health when it mattered most.
             </p>
           </div>
@@ -272,7 +272,7 @@ export default function TestimonialsPageClient() {
       </section>
 
       {/* Stats strip */}
-      <section className="border-y border-[#fff8ed]/8 bg-[#fff8ed]/2">
+      <section className="border-y border-black/10 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {stats.map((s) => (
             <div key={s.label}>
@@ -282,8 +282,8 @@ export default function TestimonialsPageClient() {
               >
                 {s.value}
               </p>
-              <p className="text-[#fff8ed] font-semibold text-sm mt-1">{s.label}</p>
-              <p className="text-[#fff8ed]/35 text-xs mt-0.5 font-[family-name:var(--font-inter)]">{s.sub}</p>
+              <p className="text-black font-semibold text-sm mt-1">{s.label}</p>
+              <p className="text-black text-xs mt-0.5 font-[family-name:var(--font-inter)]">{s.sub}</p>
             </div>
           ))}
         </div>
@@ -294,18 +294,18 @@ export default function TestimonialsPageClient() {
         <div className="bg-[#d52128] rounded-sm p-10 lg:p-14 relative overflow-hidden">
           <div
             className="absolute right-0 top-0 bottom-0 w-1/2 pointer-events-none opacity-10"
-            style={{ background: 'radial-gradient(ellipse at right center, #fff8ed 0%, transparent 70%)' }}
+            style={{ background: 'radial-gradient(ellipse at right center, white 0%, transparent 70%)' }}
             aria-hidden="true"
           />
-          <Quote size={48} className="text-[#fff8ed]/20 mb-6" aria-hidden="true" />
-          <blockquote className="text-[#fff8ed] font-black text-balance max-w-3xl mb-8"
+          <Quote size={48} className="text-white/20 mb-6" aria-hidden="true" />
+          <blockquote className="text-white font-black text-balance max-w-3xl mb-8"
             style={{ fontSize: 'clamp(1.4rem, 3vw, 2rem)', lineHeight: 1.35 }}>
             &ldquo;{featured.text}&rdquo;
           </blockquote>
           <div className="flex items-center gap-4">
             <div>
-              <p className="text-[#fff8ed] font-bold">{featured.name}</p>
-              <p className="text-[#fff8ed]/70 text-sm font-[family-name:var(--font-inter)]">{featured.location} &mdash; {featured.service}</p>
+              <p className="text-white font-bold">{featured.name}</p>
+              <p className="text-white/70 text-sm font-[family-name:var(--font-inter)]">{featured.location} &mdash; {featured.service}</p>
             </div>
             <div className="ml-2">
               <StarRow count={featured.rating} />
@@ -315,18 +315,18 @@ export default function TestimonialsPageClient() {
       </section>
 
       {/* Filter + Search bar */}
-      <section className="sticky top-20 z-30 bg-[#6ba6c5]/95 backdrop-blur-md border-y border-[#fff8ed]/8">
+      <section className="sticky top-20 z-30 bg-white/95 backdrop-blur-md border-y border-black/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
 
           {/* Search */}
           <div className="relative flex-1 max-w-sm">
-            <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#fff8ed]/30 pointer-events-none" aria-hidden="true" />
+            <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-black/30 pointer-events-none" aria-hidden="true" />
             <input
               type="search"
               value={search}
               onChange={(e) => { setSearch(e.target.value); setVisibleCount(9) }}
               placeholder="Search reviews..."
-              className="w-full bg-[#fff8ed]/5 border border-[#fff8ed]/10 text-[#fff8ed] placeholder-[#fff8ed]/30 text-sm pl-9 pr-4 py-2.5 rounded-sm focus:outline-none focus:border-[#d52128]/50 font-[family-name:var(--font-inter)]"
+              className="w-full bg-black/5 border border-black/10 text-black placeholder-black/40 text-sm pl-9 pr-4 py-2.5 rounded-sm focus:outline-none focus:border-[#d52128]/50 font-[family-name:var(--font-inter)]"
               aria-label="Search testimonials"
             />
           </div>
@@ -339,8 +339,8 @@ export default function TestimonialsPageClient() {
                 onClick={() => { setActiveType(cat); setVisibleCount(9) }}
                 className={`text-xs font-semibold px-4 py-2.5 rounded-sm transition-all font-[family-name:var(--font-inter)] whitespace-nowrap ${
                   activeType === cat
-                    ? 'bg-[#d52128] text-[#fff8ed]'
-                    : 'bg-[#fff8ed]/5 text-[#fff8ed]/55 hover:text-[#fff8ed]/80 border border-[#fff8ed]/10 hover:border-[#fff8ed]/20'
+                    ? 'bg-[#d52128] text-white'
+                    : 'bg-black/5 text-black/60 hover:text-black border border-black/10 hover:border-black/20'
                 }`}
                 aria-pressed={activeType === cat}
               >
@@ -353,7 +353,7 @@ export default function TestimonialsPageClient() {
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setServiceOpen(!serviceOpen)}
-              className="flex items-center gap-2 bg-[#fff8ed]/5 border border-[#fff8ed]/10 hover:border-[#fff8ed]/25 text-[#fff8ed]/60 hover:text-[#fff8ed]/80 text-xs font-semibold px-4 py-2.5 rounded-sm transition-all font-[family-name:var(--font-inter)] whitespace-nowrap"
+              className="flex items-center gap-2 bg-black/5 border border-black/10 hover:border-black/25 text-black/60 hover:text-black text-xs font-semibold px-4 py-2.5 rounded-sm transition-all font-[family-name:var(--font-inter)] whitespace-nowrap"
               aria-haspopup="listbox"
               aria-expanded={serviceOpen}
             >
@@ -361,15 +361,15 @@ export default function TestimonialsPageClient() {
               <ChevronDown size={13} className={`transition-transform ${serviceOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
             </button>
             {serviceOpen && (
-              <div className="absolute right-0 top-full mt-2 w-48 bg-[#6ba6c5] border border-[#fff8ed]/12 rounded-sm shadow-2xl z-50 overflow-hidden" role="listbox">
+              <div className="absolute right-0 top-full mt-2 w-48 bg-white border border-black/10 rounded-sm shadow-2xl z-50 overflow-hidden" role="listbox">
                 {serviceFilters.map((s) => (
                   <button
                     key={s}
                     onClick={() => { setActiveService(s); setServiceOpen(false); setVisibleCount(9) }}
                     className={`w-full text-left text-xs px-4 py-3 transition-colors font-[family-name:var(--font-inter)] ${
                       activeService === s
-                        ? 'bg-[#d52128]/15 text-[#d52128] font-semibold'
-                        : 'text-[#fff8ed]/55 hover:bg-[#fff8ed]/5 hover:text-[#fff8ed]/80'
+                        ? 'bg-[#d52128]/10 text-[#d52128] font-semibold'
+                        : 'text-black/60 hover:bg-black/5 hover:text-black'
                     }`}
                     role="option"
                     aria-selected={activeService === s}
@@ -385,7 +385,7 @@ export default function TestimonialsPageClient() {
 
       {/* Results count */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-10 pb-2">
-        <p className="text-[#fff8ed]/30 text-xs font-[family-name:var(--font-inter)] uppercase tracking-widest">
+        <p className="text-black/40 text-xs font-[family-name:var(--font-inter)] uppercase tracking-widest">
           {filtered.length} {filtered.length === 1 ? 'review' : 'reviews'} found
         </p>
       </div>
@@ -394,13 +394,13 @@ export default function TestimonialsPageClient() {
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
         {filtered.length === 0 ? (
           <div className="text-center py-24">
-            <p className="text-[#fff8ed]/30 text-lg font-semibold mb-3">No reviews found</p>
-            <p className="text-[#fff8ed]/20 text-sm font-[family-name:var(--font-inter)] mb-8">
+            <p className="text-black/40 text-lg font-semibold mb-3">No reviews found</p>
+            <p className="text-black/30 text-sm font-[family-name:var(--font-inter)] mb-8">
               Try adjusting your search or filter criteria.
             </p>
             <button
               onClick={() => { setSearch(''); setActiveType('All'); setActiveService('All Services'); setVisibleCount(9) }}
-              className="bg-[#d52128] text-[#fff8ed] text-sm font-semibold px-6 py-3 rounded-sm hover:bg-[#b91b21] transition-colors font-[family-name:var(--font-inter)]"
+              className="bg-[#d52128] text-white text-sm font-semibold px-6 py-3 rounded-sm hover:bg-[#b91b21] transition-colors font-[family-name:var(--font-inter)]"
             >
               Clear Filters
             </button>
@@ -417,12 +417,12 @@ export default function TestimonialsPageClient() {
               <div className="text-center mt-12">
                 <button
                   onClick={() => setVisibleCount((c) => c + 6)}
-                  className="group inline-flex items-center gap-2 bg-[#fff8ed]/5 hover:bg-[#fff8ed]/10 border border-[#fff8ed]/12 hover:border-[#fff8ed]/25 text-[#fff8ed]/70 hover:text-[#fff8ed] text-sm font-semibold px-8 py-3.5 rounded-sm transition-all font-[family-name:var(--font-inter)]"
+                  className="group inline-flex items-center gap-2 bg-black/5 hover:bg-black/10 border border-black/10 hover:border-black/20 text-black/70 hover:text-black text-sm font-semibold px-8 py-3.5 rounded-sm transition-all font-[family-name:var(--font-inter)]"
                 >
                   Load More Reviews
                   <ChevronDown size={15} className="group-hover:translate-y-0.5 transition-transform" aria-hidden="true" />
                 </button>
-                <p className="text-[#fff8ed]/20 text-xs mt-3 font-[family-name:var(--font-inter)]">
+                <p className="text-black/30 text-xs mt-3 font-[family-name:var(--font-inter)]">
                   Showing {visible.length} of {filtered.length}
                 </p>
               </div>
@@ -433,31 +433,31 @@ export default function TestimonialsPageClient() {
 
       {/* CTA strip */}
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="bg-[#fff8ed]/3 border border-[#fff8ed]/10 rounded-sm px-10 py-12 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+        <div className="bg-black rounded-sm px-10 py-12 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
           <div>
             <p className="text-[#d52128] text-xs font-bold uppercase tracking-widest mb-3 font-[family-name:var(--font-inter)]">
               Join Our Patients
             </p>
             <h2
-              className="text-[#fff8ed] font-black text-balance"
+              className="text-white font-black text-balance"
               style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', lineHeight: 1.15 }}
             >
-              Ready to Experience the Difference?
+              Ready to Experience the <span className="text-[#d52128]">Difference</span>?
             </h2>
-            <p className="text-[#fff8ed]/45 text-sm mt-3 font-[family-name:var(--font-inter)]">
+            <p className="text-white/60 text-sm mt-3 font-[family-name:var(--font-inter)]">
               Walk in or book your visit — no referrals, no long waits, no confusion.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
             <a
               href="/#contact"
-              className="bg-[#d52128] hover:bg-[#b91b21] text-[#fff8ed] font-bold text-sm px-8 py-4 rounded-sm transition-colors font-[family-name:var(--font-inter)] whitespace-nowrap"
+              className="bg-[#d52128] hover:bg-[#b91b21] text-white font-bold text-sm px-8 py-4 rounded-sm transition-colors font-[family-name:var(--font-inter)] whitespace-nowrap"
             >
               Book Your Visit
             </a>
             <a
               href="/services"
-              className="bg-[#fff8ed]/6 hover:bg-[#fff8ed]/10 border border-[#fff8ed]/15 text-[#fff8ed]/80 font-bold text-sm px-8 py-4 rounded-sm transition-all font-[family-name:var(--font-inter)] whitespace-nowrap"
+              className="bg-white/10 hover:bg-white/15 border border-white/15 text-white font-bold text-sm px-8 py-4 rounded-sm transition-all font-[family-name:var(--font-inter)] whitespace-nowrap"
             >
               View Services
             </a>

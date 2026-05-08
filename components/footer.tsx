@@ -35,7 +35,7 @@ export default function Footer() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Aloha%20Urgent%20Care%20Social%20Logos-QMARwRjkpaGnxYjPhnAa8kg4lF55YA.png"
                 alt=""
                 aria-hidden="true"
-                className="w-12 h-auto shrink-0"
+                className="w-14 h-auto shrink-0"
               />
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/kDkGSIGVaDqgM66OUvpuw-Kgy6eBKlvfHemyaiYAuT7yhOPpmNF8.png"

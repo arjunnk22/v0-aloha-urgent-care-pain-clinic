@@ -34,7 +34,7 @@ export default function Header() {
         <a href="/" className="flex items-center gap-3 shrink-0" aria-label="Aloha Urgent Care Home">
           {/* Hand-heart logo icon */}
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hand%20holding%20the%20heart.JPEG-JEYsFayyP5t0FitMa0jJhlSvPCdnDP.jpeg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Aloha%20Urgent%20Care%20Social%20Logos-QMARwRjkpaGnxYjPhnAa8kg4lF55YA.png"
             alt=""
             aria-hidden="true"
             width={40}

@@ -32,10 +32,10 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <a href="#" aria-label="Aloha Urgent Care Home" className="flex items-center gap-2 mb-5">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/F91CcJU9toaa1iV82D7dH-MscWNGIt4RPhR754PLoxdPaZ4Bqgg6.png"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Aloha%20Urgent%20Care%20Social%20Logos-QMARwRjkpaGnxYjPhnAa8kg4lF55YA.png"
                 alt=""
                 aria-hidden="true"
-                className="w-8 h-auto opacity-80 shrink-0"
+                className="w-9 h-auto shrink-0"
               />
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/kDkGSIGVaDqgM66OUvpuw-Kgy6eBKlvfHemyaiYAuT7yhOPpmNF8.png"

@@ -36,20 +36,20 @@ export default function About() {
               Fast, Efficient &amp; Accessible —
               <span className="text-[#d52128]"> For Everyone</span>
             </h2>
-            <p className="text-black/65 text-base leading-relaxed mb-4">
-              Aloha Urgent Care &amp; Pain Clinic was built with one goal: deliver fast, physician-led
+            <p className="text-black text-base leading-relaxed mb-4">
+              <span className="text-[#d52128] font-[family-name:var(--font-quicksand)] font-bold">Aloha Urgent Care &amp; Pain Clinic</span> was built with one goal: deliver fast, physician-led
               care where everything is handled in a single visit. We operate outside the traditional
               healthcare model — positioned as a modern, efficient, high-quality alternative designed
               for convenience, speed, and personalized care.
             </p>
-            <p className="text-black/65 text-base leading-relaxed mb-8">
+            <p className="text-black text-base leading-relaxed mb-8">
               Whether you&apos;re a local family, an international visitor to Waikiki, a working professional
               with no time to spare, or an elderly patient needing attentive care — we eliminate
               everything frustrating about healthcare: the waits, the runarounds, and the confusion.
             </p>
 
             {/* Elevate Your Health pull quote */}
-            <div className="flex items-center gap-5 bg-[#6ba6c5] rounded-sm px-6 py-5 mb-8">
+            <div className="flex items-center gap-5 bg-[#d52128] rounded-sm px-6 py-5 mb-8">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/F91CcJU9toaa1iV82D7dH-MscWNGIt4RPhR754PLoxdPaZ4Bqgg6.png"
                 alt=""
@@ -58,10 +58,10 @@ export default function About() {
                 style={{ animation: 'balloonFloat 6s ease-in-out infinite' }}
               />
               <div>
-                <p className="text-[#fff8ed] font-black text-lg leading-tight tracking-tight">
+                <p className="text-white font-black text-lg leading-tight tracking-tight">
                   &ldquo;Elevate Your Health&rdquo;
                 </p>
-                <p className="text-[#fff8ed]/40 text-xs mt-1 font-[family-name:var(--font-inter)] uppercase tracking-widest">
+                <p className="text-white/60 text-xs mt-1 font-[family-name:var(--font-inter)] uppercase tracking-widest">
                   Our Promise to You
                 </p>
               </div>
@@ -76,7 +76,7 @@ export default function About() {
 
             <a
               href="#contact"
-              className="group inline-flex items-center gap-2 bg-[#6ba6c5] hover:bg-[#d52128] text-[#fff8ed] font-bold px-8 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
+              className="group inline-flex items-center gap-2 bg-[#d52128] hover:bg-[#b91b21] text-white font-bold px-8 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
             >
               Get Care Today
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />

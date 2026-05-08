@@ -47,7 +47,7 @@ export default function AboutPageClient() {
     <main className="bg-white">
 
       {/* ── Hero ── */}
-      <section className="bg-[#6ba6c5] pt-36 pb-20 relative overflow-hidden">
+      <section className="bg-white pt-36 pb-20 relative overflow-hidden border-b border-black/10">
         <div className="absolute inset-0 opacity-5 pointer-events-none"
           style={{ backgroundImage: 'radial-gradient(circle at 70% 40%, #d52128 0%, transparent 60%)' }}
           aria-hidden="true"
@@ -75,18 +75,18 @@ export default function AboutPageClient() {
             Our Story
           </span>
           <h1
-            className="text-[#fff8ed] font-black text-balance max-w-3xl mb-6"
+            className="text-black font-black text-balance max-w-3xl mb-6"
             style={{ fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', lineHeight: 1.08 }}
           >
             Physician-Led Care Built for{' '}
             <span className="text-[#d52128]">Hawaii</span>
           </h1>
-          <p className="text-[#fff8ed]/55 text-lg leading-relaxed max-w-2xl mb-8">
-            Founded by Dr. Sung S. Yang, Aloha Urgent Care &amp; Pain Clinic was created with a single
+          <p className="text-black text-lg leading-relaxed max-w-2xl mb-8">
+            Founded by Dr. Sung S. Yang, <span className="text-[#d52128] font-[family-name:var(--font-quicksand)] font-bold">Aloha Urgent Care &amp; Pain Clinic</span> was created with a single
             mission — to deliver fast, personalized, and accessible healthcare for Hawaii residents
             and visitors without the delays, confusion, or hidden costs of traditional medicine.
           </p>
-          <p className="text-[#fff8ed]/25 text-xs uppercase tracking-[0.35em] font-[family-name:var(--font-inter)]">
+          <p className="text-black text-xs uppercase tracking-[0.35em] font-[family-name:var(--font-inter)]">
             &mdash; Elevate Your Health
           </p>
         </div>
@@ -126,19 +126,19 @@ export default function AboutPageClient() {
               >
                 About Dr. Sung S. Yang
               </h2>
-              <p className="text-black/65 text-base leading-relaxed mb-5">
+              <p className="text-black text-base leading-relaxed mb-5">
                 Raised in New Jersey, Dr. Sung S. Yang moved to Hawaii in 2010 to open his practice
                 in Waikiki — with a mission to personalize and improve healthcare in the state of Hawaii.
                 He takes pride in providing affordable and professional care for Hawaii residents and
                 visitors alike.
               </p>
-              <p className="text-black/65 text-base leading-relaxed mb-5">
+              <p className="text-black text-base leading-relaxed mb-5">
                 Dr. Yang will spend time with you to discuss, diagnose, and truly understand your
                 condition so that it can be properly treated. This level of personalized care is why
                 patients keep coming back. It is a level of medical attention that everybody deserves:
                 professional, affordable, and genuinely personal.
               </p>
-              <p className="text-black/65 text-base leading-relaxed mb-10">
+              <p className="text-black text-base leading-relaxed mb-10">
                 Educated in chemistry and medicine at the world-renowned Johns Hopkins University,
                 he earned his medical degree at Wake Forest University School of Medicine and
                 completed his internal medicine residency training at the University of Washington.
@@ -146,7 +146,7 @@ export default function AboutPageClient() {
 
               <a
                 href="/#contact"
-                className="group inline-flex items-center gap-2 bg-[#6ba6c5] hover:bg-[#d52128] text-[#fff8ed] font-bold px-8 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
+                className="group inline-flex items-center gap-2 bg-[#d52128] hover:bg-[#b91b21] text-white font-bold px-8 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
               >
                 Book with Dr. Yang
                 <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
@@ -157,7 +157,7 @@ export default function AboutPageClient() {
       </section>
 
       {/* ── Education & Credentials ── */}
-      <section className="bg-[#6ba6c5] py-24 lg:py-28">
+      <section className="bg-white py-24 lg:py-28 border-t border-black/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4">
             <GraduationCap size={18} className="text-[#d52128]" />
@@ -166,33 +166,33 @@ export default function AboutPageClient() {
             </span>
           </div>
           <h2
-            className="text-[#fff8ed] font-black text-balance mb-14 max-w-xl"
+            className="text-black font-black text-balance mb-14 max-w-xl"
             style={{ fontSize: 'clamp(1.7rem, 3vw, 2.4rem)', lineHeight: 1.12 }}
           >
-            World-Class Medical Education
+            World-Class <span className="text-[#d52128]">Medical Education</span>
           </h2>
 
           <div className="relative flex flex-col gap-0">
             {/* vertical line */}
-            <div className="absolute left-5 top-5 bottom-5 w-px bg-[#fff8ed]/10 hidden sm:block" aria-hidden="true" />
+            <div className="absolute left-5 top-5 bottom-5 w-px bg-black/10 hidden sm:block" aria-hidden="true" />
 
             {education.map((item, i) => (
               <div key={i} className="relative flex gap-8 pb-12 last:pb-0">
                 {/* Step dot */}
                 <div className="shrink-0 relative z-10 hidden sm:flex">
                   <div className="w-10 h-10 rounded-full bg-[#d52128] flex items-center justify-center">
-                    <span className="text-[#fff8ed] font-black text-sm">{i + 1}</span>
+                    <span className="text-white font-black text-sm">{i + 1}</span>
                   </div>
                 </div>
-                <div className="bg-[#fff8ed]/4 border border-[#fff8ed]/8 rounded-sm p-7 flex-1 hover:border-[#d52128]/30 transition-colors">
+                <div className="bg-white border border-black/10 rounded-sm p-7 flex-1 hover:border-[#d52128]/30 transition-colors shadow-sm">
                   <p className="text-[#d52128] text-xs font-bold uppercase tracking-wider mb-2 font-[family-name:var(--font-inter)]">
                     {item.detail}
                   </p>
-                  <h3 className="text-[#fff8ed] font-bold text-lg mb-1">{item.degree}</h3>
-                  <p className="text-[#fff8ed]/70 font-semibold text-sm">{item.school}</p>
+                  <h3 className="text-black font-bold text-lg mb-1">{item.degree}</h3>
+                  <p className="text-black font-semibold text-sm">{item.school}</p>
                   <div className="flex items-center gap-1.5 mt-2">
-                    <MapPin size={12} className="text-[#fff8ed]/30" />
-                    <p className="text-[#fff8ed]/35 text-xs font-[family-name:var(--font-inter)]">{item.location}</p>
+                    <MapPin size={12} className="text-black/40" />
+                    <p className="text-black text-xs font-[family-name:var(--font-inter)]">{item.location}</p>
                   </div>
                 </div>
               </div>
@@ -218,13 +218,13 @@ export default function AboutPageClient() {
               >
                 A Team That Genuinely Cares
               </h2>
-              <p className="text-black/65 text-base leading-relaxed mb-5">
+              <p className="text-black text-base leading-relaxed mb-5">
                 Our back office staff includes an exceptionally well-trained group of medical
                 assistants who are trained to care for and treat patients of all ages. Our goal is
                 to make your visit as comfortable as possible and give you the very best care and
                 treatment — not only while you are with us, but after you leave our office as well.
               </p>
-              <p className="text-black/65 text-base leading-relaxed mb-10">
+              <p className="text-black text-base leading-relaxed mb-10">
                 If you have any questions about scheduling your appointment, medication refills,
                 referrals to a specialist, or any other issues — contact us right away. All of our
                 staff are fluent in <strong className="text-black">English and Korean</strong> and
@@ -234,14 +234,14 @@ export default function AboutPageClient() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="tel:+18083426305"
-                  className="group inline-flex items-center gap-2 bg-[#d52128] hover:bg-[#b91b21] text-[#fff8ed] font-bold px-8 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
+                  className="group inline-flex items-center gap-2 bg-[#d52128] hover:bg-[#b91b21] text-white font-bold px-8 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
                 >
                   <Phone size={15} />
                   (808) 342-6305
                 </a>
                 <a
                   href="/#contact"
-                  className="group inline-flex items-center gap-2 bg-transparent border-2 border-[#6ba6c5] hover:bg-[#6ba6c5] text-[#6ba6c5] hover:text-[#fff8ed] font-bold px-8 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
+                  className="group inline-flex items-center gap-2 bg-transparent border-2 border-black hover:bg-black text-black hover:text-white font-bold px-8 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
                 >
                   Book an Appointment
                   <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
@@ -280,30 +280,30 @@ export default function AboutPageClient() {
       </section>
 
       {/* ── Values strip ── */}
-      <section className="bg-[#6ba6c5] py-20">
+      <section className="bg-white py-20 border-t border-black/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
             <span className="inline-block text-[#d52128] text-xs font-bold uppercase tracking-widest mb-4 font-[family-name:var(--font-inter)]">
               What We Stand For
             </span>
             <h2
-              className="text-[#fff8ed] font-black text-balance"
+              className="text-black font-black text-balance"
               style={{ fontSize: 'clamp(1.7rem, 3vw, 2.4rem)', lineHeight: 1.12 }}
             >
-              Our Core Values
+              Our <span className="text-[#d52128]">Core Values</span>
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v, i) => (
               <div
                 key={i}
-                className="bg-[#fff8ed]/4 border border-[#fff8ed]/8 rounded-sm p-7 hover:border-[#d52128]/40 hover:bg-[#fff8ed]/6 transition-all duration-300"
+                className="bg-white border border-black/10 rounded-sm p-7 hover:border-[#d52128]/40 hover:shadow-md transition-all duration-300"
               >
                 <div className="text-[#d52128] font-black text-4xl mb-4 leading-none font-[family-name:var(--font-inter)]">
                   0{i + 1}
                 </div>
-                <h3 className="text-[#fff8ed] font-bold text-base mb-3">{v.title}</h3>
-                <p className="text-[#fff8ed]/50 text-sm leading-relaxed">{v.desc}</p>
+                <h3 className="text-black font-bold text-base mb-3">{v.title}</h3>
+                <p className="text-black text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -311,19 +311,19 @@ export default function AboutPageClient() {
       </section>
 
       {/* ── CTA Banner ── */}
-      <section className="bg-[#d52128] py-16">
+      <section className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-8">
           <div>
-            <h2 className="text-[#fff8ed] font-black text-2xl lg:text-3xl text-balance">
-              Ready to Experience the Difference?
+            <h2 className="text-white font-black text-2xl lg:text-3xl text-balance">
+              Ready to Experience the <span className="text-[#d52128]">Difference</span>?
             </h2>
-            <p className="text-[#fff8ed]/75 mt-2 text-sm font-[family-name:var(--font-inter)]">
+            <p className="text-white/75 mt-2 text-sm font-[family-name:var(--font-inter)]">
               Walk in or book ahead — physician-led care available now in Waikiki.
             </p>
           </div>
           <a
             href="/#contact"
-            className="shrink-0 group inline-flex items-center gap-2 bg-[#fff8ed] hover:bg-[#6ba6c5] text-[#d52128] hover:text-[#fff8ed] font-bold px-10 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
+            className="shrink-0 group inline-flex items-center gap-2 bg-[#d52128] hover:bg-[#b91b21] text-white font-bold px-10 py-4 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
           >
             Book Now
             <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />

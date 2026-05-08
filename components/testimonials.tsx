@@ -81,12 +81,12 @@ function StarRow({ count }: { count: number }) {
 
 function Card({ name, location, rating, text }: { name: string; location: string; rating: number; text: string }) {
   return (
-    <div className="flex-shrink-0 w-[320px] md:w-[360px] bg-white/4 border border-[#fff8ed]/8 rounded-sm px-7 py-6 flex flex-col gap-4 mx-3">
+    <div className="flex-shrink-0 w-[320px] md:w-[360px] bg-white border border-black/10 rounded-sm px-7 py-6 flex flex-col gap-4 mx-3 shadow-sm">
       <StarRow count={rating} />
-      <p className="text-[#fff8ed]/80 text-sm leading-relaxed flex-1">&ldquo;{text}&rdquo;</p>
-      <div className="border-t border-[#fff8ed]/8 pt-4">
-        <p className="text-[#fff8ed] font-bold text-sm">{name}</p>
-        <p className="text-[#fff8ed]/40 text-xs mt-0.5 font-[family-name:var(--font-inter)]">{location}</p>
+      <p className="text-black text-sm leading-relaxed flex-1">&ldquo;{text}&rdquo;</p>
+      <div className="border-t border-black/10 pt-4">
+        <p className="text-black font-bold text-sm">{name}</p>
+        <p className="text-black/60 text-xs mt-0.5 font-[family-name:var(--font-inter)]">{location}</p>
       </div>
     </div>
   )
@@ -142,11 +142,11 @@ export default function Testimonials() {
         backgroundPosition: 'center center',
       }}
     >
-      {/* Deep teal overlay — keeps turtle visible but text fully readable */}
-      <div className="absolute inset-0 bg-[#6ba6c5]/80 pointer-events-none" aria-hidden="true" />
+      {/* White overlay — clean readable background */}
+      <div className="absolute inset-0 bg-white/90 pointer-events-none" aria-hidden="true" />
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse 70% 60% at 100% 0%, rgba(213,33,40,0.06) 0%, transparent 60%)' }}
+        style={{ background: 'radial-gradient(ellipse 70% 60% at 100% 0%, rgba(213,33,40,0.04) 0%, transparent 60%)' }}
         aria-hidden="true"
       />
 
@@ -157,14 +157,14 @@ export default function Testimonials() {
               Patient Stories
             </span>
             <h2
-              className="text-white font-black text-balance"
+              className="text-black font-black text-balance"
               style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.1 }}
             >
               Real Patients,{' '}
               <span className="text-[#d52128]">Real Results</span>
             </h2>
           </div>
-          <p className="text-[#0d2d3a]/55 text-sm max-w-xs font-[family-name:var(--font-inter)] lg:text-right leading-relaxed">
+          <p className="text-black text-sm max-w-xs font-[family-name:var(--font-inter)] lg:text-right leading-relaxed">
             Locals and visitors from across the world who trusted us when it mattered most.
           </p>
         </div>
@@ -173,12 +173,12 @@ export default function Testimonials() {
       <div className="relative flex flex-col gap-5 overflow-hidden">
         <div
           className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(to right, rgba(107,166,197,0.80), transparent)' }}
+          style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.95), transparent)' }}
           aria-hidden="true"
         />
         <div
           className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(to left, rgba(107,166,197,0.80), transparent)' }}
+          style={{ background: 'linear-gradient(to left, rgba(255,255,255,0.95), transparent)' }}
           aria-hidden="true"
         />
 
@@ -187,7 +187,7 @@ export default function Testimonials() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 mt-14 text-center">
-        <p className="text-[#0d2d3a]/40 text-xs uppercase tracking-widest font-[family-name:var(--font-inter)]">
+        <p className="text-black text-xs uppercase tracking-widest font-[family-name:var(--font-inter)]">
           Trusted by locals and visitors from over 30 countries
         </p>
       </div>

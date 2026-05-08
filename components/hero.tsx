@@ -96,18 +96,18 @@ export default function Hero() {
           <div className="flex-1">
             <div className="inline-flex items-center gap-2 bg-black/5 border border-black/15 rounded-sm px-4 py-2 mb-5">
               <MapPin size={13} className="text-[#d52128]" />
-              <span className="text-black/70 text-xs font-semibold uppercase tracking-widest font-[family-name:var(--font-inter)]">
+              <span className="text-black text-xs font-semibold uppercase tracking-widest font-[family-name:var(--font-inter)]">
                 International Market Place, Level 2 — Waikiki, HI
               </span>
             </div>
             <h1
-              className="text-[#d52128] font-black text-balance leading-none mb-4"
+              className="text-[#d52128] font-black text-balance leading-none mb-4 font-[family-name:var(--font-quicksand)]"
               style={{ fontSize: 'clamp(2rem, 4.5vw, 3.6rem)', lineHeight: 1.08 }}
             >
               Aloha Urgent Care &amp; Pain Clinic
             </h1>
             <p
-              className="text-black/70 font-semibold text-balance"
+              className="text-black font-semibold text-balance"
               style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.15rem)', lineHeight: 1.5 }}
             >
               Healthcare Made Simple, Thorough &amp; Accessible
@@ -126,21 +126,21 @@ export default function Hero() {
               </a>
               <a
                 href="/services"
-                className="inline-flex items-center justify-center gap-2 border border-black/20 hover:border-black/50 bg-transparent hover:bg-black/5 text-black/70 hover:text-black font-semibold px-7 py-3.5 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
+                className="inline-flex items-center justify-center gap-2 border border-black/20 hover:border-black/50 bg-transparent hover:bg-black/5 text-black hover:text-black font-semibold px-7 py-3.5 rounded-sm transition-all duration-200 text-sm font-[family-name:var(--font-inter)]"
               >
                 View Services
               </a>
             </div>
             <div className="flex flex-wrap gap-x-5 gap-y-2">
-              <div className="flex items-center gap-2 text-black/60 text-xs font-[family-name:var(--font-inter)]">
+              <div className="flex items-center gap-2 text-black text-xs font-[family-name:var(--font-inter)]">
                 <Clock size={13} className="text-[#d52128] shrink-0" />
                 <span>Open 6 Days — Until 11 PM</span>
               </div>
-              <div className="flex items-center gap-2 text-black/60 text-xs font-[family-name:var(--font-inter)]">
+              <div className="flex items-center gap-2 text-black text-xs font-[family-name:var(--font-inter)]">
                 <ShieldCheck size={13} className="text-[#d52128] shrink-0" />
                 <span>Board-Certified Physicians</span>
               </div>
-              <div className="flex items-center gap-2 text-black/60 text-xs font-[family-name:var(--font-inter)]">
+              <div className="flex items-center gap-2 text-black text-xs font-[family-name:var(--font-inter)]">
                 <Users size={13} className="text-[#d52128] shrink-0" />
                 <span>All Ages Welcome</span>
               </div>
@@ -159,7 +159,7 @@ export default function Hero() {
               className="bg-black/4 border border-black/10 px-4 py-3 rounded-sm"
             >
               <p className="text-[#d52128] font-black text-sm leading-tight">{s.value}</p>
-              <p className="text-black/50 text-xs mt-0.5 uppercase tracking-widest font-[family-name:var(--font-inter)]">
+              <p className="text-black text-xs mt-0.5 uppercase tracking-widest font-[family-name:var(--font-inter)]">
                 {s.label}
               </p>
             </div>

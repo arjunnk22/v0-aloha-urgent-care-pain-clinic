@@ -84,7 +84,7 @@ export default function ContactPageClient() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-[#6ba6c5] pt-36 pb-20 relative overflow-hidden">
+      <section className="bg-white pt-36 pb-20 relative overflow-hidden border-b border-black/10">
         <div
           className="absolute inset-0 pointer-events-none opacity-[0.04]"
           style={{
@@ -97,13 +97,13 @@ export default function ContactPageClient() {
             Get In Touch
           </span>
           <h1
-            className="text-[#fff8ed] font-black text-balance max-w-2xl mb-5"
+            className="text-black font-black text-balance max-w-2xl mb-5"
             style={{ fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', lineHeight: 1.08 }}
           >
             Book Your Visit or{' '}
             <span className="text-[#d52128]">Ask Us Anything</span>
           </h1>
-          <p className="text-[#fff8ed]/55 text-lg leading-relaxed max-w-xl">
+          <p className="text-black text-lg leading-relaxed max-w-xl">
             Walk-ins welcome — no appointment required. Or fill out the form below and
             our team will get back to you promptly.
           </p>
@@ -112,7 +112,7 @@ export default function ContactPageClient() {
           <div className="flex flex-wrap gap-3 mt-8">
             <a
               href="tel:+18083426305"
-              className="flex items-center gap-2 bg-[#fff8ed]/8 hover:bg-[#d52128] border border-[#fff8ed]/12 hover:border-[#d52128] text-[#fff8ed]/80 hover:text-[#fff8ed] text-sm px-5 py-2.5 rounded-sm transition-all duration-200 font-[family-name:var(--font-inter)]"
+              className="flex items-center gap-2 bg-black/5 hover:bg-[#d52128] border border-black/10 hover:border-[#d52128] text-black hover:text-white text-sm px-5 py-2.5 rounded-sm transition-all duration-200 font-[family-name:var(--font-inter)]"
             >
               <Phone size={14} />
               (808) 342-6305
@@ -121,7 +121,7 @@ export default function ContactPageClient() {
               href="https://www.facebook.com/profile.php?id=61574698695230"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-[#fff8ed]/8 hover:bg-[#d52128] border border-[#fff8ed]/12 hover:border-[#d52128] text-[#fff8ed]/80 hover:text-[#fff8ed] text-sm px-5 py-2.5 rounded-sm transition-all duration-200 font-[family-name:var(--font-inter)]"
+              className="flex items-center gap-2 bg-black/5 hover:bg-[#d52128] border border-black/10 hover:border-[#d52128] text-black hover:text-white text-sm px-5 py-2.5 rounded-sm transition-all duration-200 font-[family-name:var(--font-inter)]"
               aria-label="Facebook"
             >
               <Facebook size={14} />
@@ -131,7 +131,7 @@ export default function ContactPageClient() {
               href="https://www.instagram.com/aloha.urgent.care/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-[#fff8ed]/8 hover:bg-[#d52128] border border-[#fff8ed]/12 hover:border-[#d52128] text-[#fff8ed]/80 hover:text-[#fff8ed] text-sm px-5 py-2.5 rounded-sm transition-all duration-200 font-[family-name:var(--font-inter)]"
+              className="flex items-center gap-2 bg-black/5 hover:bg-[#d52128] border border-black/10 hover:border-[#d52128] text-black hover:text-white text-sm px-5 py-2.5 rounded-sm transition-all duration-200 font-[family-name:var(--font-inter)]"
               aria-label="Instagram"
             >
               <Instagram size={14} />
@@ -164,11 +164,11 @@ export default function ContactPageClient() {
                   aria-label="Call Aloha Urgent Care"
                 >
                   <div className="w-11 h-11 bg-[#d52128]/10 rounded-sm flex items-center justify-center shrink-0 group-hover:bg-[#d52128] transition-colors">
-                    <Phone size={17} className="text-[#d52128] group-hover:text-[#fff8ed] transition-colors" />
+                    <Phone size={17} className="text-[#d52128] group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <p className="text-[#6ba6c5] font-semibold text-sm">(808) 342-6305</p>
-                    <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">Call or text us anytime</p>
+                    <p className="text-black font-semibold text-sm">(808) 342-6305</p>
+                    <p className="text-black text-xs font-[family-name:var(--font-inter)]">Call or text us anytime</p>
                   </div>
                 </a>
 
@@ -178,11 +178,11 @@ export default function ContactPageClient() {
                   aria-label="Email Aloha Urgent Care"
                 >
                   <div className="w-11 h-11 bg-[#d52128]/10 rounded-sm flex items-center justify-center shrink-0 group-hover:bg-[#d52128] transition-colors">
-                    <Mail size={17} className="text-[#d52128] group-hover:text-[#fff8ed] transition-colors" />
+                    <Mail size={17} className="text-[#d52128] group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <p className="text-[#6ba6c5] font-semibold text-sm">Send Us an Email</p>
-                    <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">We reply within a few hours</p>
+                    <p className="text-black font-semibold text-sm">Send Us an Email</p>
+                    <p className="text-black text-xs font-[family-name:var(--font-inter)]">We reply within a few hours</p>
                   </div>
                 </a>
 
@@ -191,8 +191,8 @@ export default function ContactPageClient() {
                     <MapPin size={17} className="text-[#d52128]" />
                   </div>
                   <div>
-                    <p className="text-[#6ba6c5] font-semibold text-sm">International Market Place, Level 2</p>
-                    <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">2330 Kalakaua Ave, Honolulu, HI 96815</p>
+                    <p className="text-black font-semibold text-sm">International Market Place, Level 2</p>
+                    <p className="text-black text-xs font-[family-name:var(--font-inter)]">2330 Kalakaua Ave, Honolulu, HI 96815</p>
                     <a
                       href="https://maps.google.com/?q=International+Market+Place+2330+Kalakaua+Ave+Honolulu+HI"
                       target="_blank"
@@ -209,17 +209,17 @@ export default function ContactPageClient() {
                     <Clock size={17} className="text-[#d52128]" />
                   </div>
                   <div className="flex flex-col gap-1.5">
-                    <p className="text-[#6ba6c5] font-semibold text-sm">Hours of Operation</p>
+                    <p className="text-black font-semibold text-sm">Hours of Operation</p>
                     <div className="flex justify-between gap-8">
-                      <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">Mon – Thurs, Sat</p>
-                      <p className="text-[#6ba6c5] text-xs font-semibold font-[family-name:var(--font-inter)]">9:30 AM – 11:00 PM</p>
+                      <p className="text-black text-xs font-[family-name:var(--font-inter)]">Mon – Thurs, Sat</p>
+                      <p className="text-black text-xs font-semibold font-[family-name:var(--font-inter)]">9:30 AM – 11:00 PM</p>
                     </div>
                     <div className="flex justify-between gap-8">
-                      <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">Friday</p>
-                      <p className="text-[#6ba6c5] text-xs font-semibold font-[family-name:var(--font-inter)]">4:30 PM – 11:00 PM</p>
+                      <p className="text-black text-xs font-[family-name:var(--font-inter)]">Friday</p>
+                      <p className="text-black text-xs font-semibold font-[family-name:var(--font-inter)]">4:30 PM – 11:00 PM</p>
                     </div>
                     <div className="flex justify-between gap-8">
-                      <p className="text-[#5a5a6e] text-xs font-[family-name:var(--font-inter)]">Sunday</p>
+                      <p className="text-black text-xs font-[family-name:var(--font-inter)]">Sunday</p>
                       <p className="text-[#d52128] text-xs font-bold font-[family-name:var(--font-inter)]">Closed</p>
                     </div>
                   </div>
@@ -232,18 +232,18 @@ export default function ContactPageClient() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Aloha Urgent Care on Facebook"
-                    className="w-10 h-10 border border-[#6ba6c5]/15 hover:border-[#d52128] hover:bg-[#d52128] rounded-sm flex items-center justify-center transition-all group"
+                    className="w-10 h-10 border border-black/15 hover:border-[#d52128] hover:bg-[#d52128] rounded-sm flex items-center justify-center transition-all group"
                   >
-                    <Facebook size={16} className="text-[#6ba6c5]/50 group-hover:text-[#fff8ed] transition-colors" />
+                    <Facebook size={16} className="text-black/50 group-hover:text-white transition-colors" />
                   </a>
                   <a
                     href="https://www.instagram.com/aloha.urgent.care/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Aloha Urgent Care on Instagram"
-                    className="w-10 h-10 border border-[#6ba6c5]/15 hover:border-[#d52128] hover:bg-[#d52128] rounded-sm flex items-center justify-center transition-all group"
+                    className="w-10 h-10 border border-black/15 hover:border-[#d52128] hover:bg-[#d52128] rounded-sm flex items-center justify-center transition-all group"
                   >
-                    <Instagram size={16} className="text-[#6ba6c5]/50 group-hover:text-[#fff8ed] transition-colors" />
+                    <Instagram size={16} className="text-black/50 group-hover:text-white transition-colors" />
                   </a>
                 </div>
               </div>
@@ -274,7 +274,7 @@ export default function ContactPageClient() {
 
             {/* Right column — Form */}
             <div className="lg:col-span-3">
-              <div className="bg-[#6ba6c5] rounded-sm p-8 lg:p-12 sticky top-28">
+              <div className="bg-[#d52128] rounded-sm p-8 lg:p-12 sticky top-28">
                 <div className="mb-8">
                   <span className="inline-block text-[#d52128] text-xs font-bold uppercase tracking-widest mb-3 font-[family-name:var(--font-inter)]">
                     Contact Form

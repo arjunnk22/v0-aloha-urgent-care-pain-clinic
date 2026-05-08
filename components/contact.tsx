@@ -82,7 +82,7 @@ export default function Contact() {
               Book Your Visit<br />
               <span className="text-[#d52128]">Today</span>
             </h2>
-            <p className="text-black/65 text-sm leading-relaxed mb-10">
+            <p className="text-black text-sm leading-relaxed mb-10">
               Ready to get care? Fill out the form and our team will confirm your appointment.
               Walk-ins also welcome — no appointment required. We serve locals, visitors,
               families, and patients of all ages.
@@ -99,7 +99,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-black font-semibold text-sm">(808) 342-6305</p>
-                  <p className="text-black/60 text-xs font-[family-name:var(--font-inter)]">Call us anytime</p>
+                  <p className="text-black text-xs font-[family-name:var(--font-inter)]">Call us anytime</p>
                 </div>
               </a>
 
@@ -113,7 +113,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-black font-semibold text-sm">Send us an email</p>
-                  <p className="text-black/60 text-xs font-[family-name:var(--font-inter)]">We reply within a few hours</p>
+                  <p className="text-black text-xs font-[family-name:var(--font-inter)]">We reply within a few hours</p>
                 </div>
               </a>
 
@@ -123,7 +123,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-black font-semibold text-sm">International Market Place, Level 2</p>
-                  <p className="text-black/60 text-xs font-[family-name:var(--font-inter)]">Waikiki, Honolulu, HI</p>
+                  <p className="text-black text-xs font-[family-name:var(--font-inter)]">Waikiki, Honolulu, HI</p>
                 </div>
               </div>
 
@@ -133,8 +133,8 @@ export default function Contact() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="text-black font-semibold text-sm">Hours of Operation</p>
-                  <p className="text-black/60 text-xs font-[family-name:var(--font-inter)]">Mon – Thurs, Sat: 9:30 AM – 11:00 PM</p>
-                  <p className="text-black/60 text-xs font-[family-name:var(--font-inter)]">Fri: 4:30 PM – 11:00 PM</p>
+                  <p className="text-black text-xs font-[family-name:var(--font-inter)]">Mon – Thurs, Sat: 9:30 AM – 11:00 PM</p>
+                  <p className="text-black text-xs font-[family-name:var(--font-inter)]">Fri: 4:30 PM – 11:00 PM</p>
                   <p className="text-[#d52128] text-xs font-semibold font-[family-name:var(--font-inter)]">Sun: Closed</p>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function Contact() {
           </div>
 
           <div className="lg:col-span-3">
-            <div className="bg-[#6ba6c5] rounded-sm p-8 lg:p-10">
+            <div className="bg-[#d52128] rounded-sm p-8 lg:p-10">
               {status === 'success' ? (
                 <div className="flex flex-col items-center justify-center text-center py-12 gap-4">
                   <CheckCircle size={48} className="text-[#d52128]" />
@@ -237,9 +237,9 @@ export default function Contact() {
                       onChange={handleChange}
                       className="bg-[#fff8ed]/8 border border-[#fff8ed]/12 text-[#fff8ed] rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-[#d52128] transition-colors appearance-none"
                     >
-                      <option value="" disabled className="bg-[#6ba6c5] text-[#fff8ed]">Select a service</option>
+                      <option value="" disabled className="bg-[#d52128] text-white">Select a service</option>
                       {reasons.map((r) => (
-                        <option key={r} value={r} className="bg-[#6ba6c5] text-[#fff8ed]">{r}</option>
+                        <option key={r} value={r} className="bg-[#d52128] text-white">{r}</option>
                       ))}
                     </select>
                   </div>

@@ -160,7 +160,7 @@ export default function Hero() {
       </div>
 
       {/* BOTTOM — Slideshow banner */}
-      <div className="relative w-full h-64 sm:h-80 md:h-96 overflow-hidden">
+      <div className="relative w-full h-80 sm:h-96 md:h-[28rem] lg:h-[32rem] overflow-hidden">
 
         {slides.map((slide, i) => (
           <div

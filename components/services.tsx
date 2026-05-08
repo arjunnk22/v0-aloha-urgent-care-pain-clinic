@@ -31,9 +31,9 @@ const services = [
   },
   {
     icon: Scissors,
-    title: 'Minor Procedures',
+    title: 'Procedures',
     description:
-      'Laceration repair including cosmetically sensitive areas, abscess drainage, foreign body removal, ear and eye irrigation, and splinting after injuries in all types of activities such as swimming, surfing, hiking and biking — all handled in clinic.',
+      'Wound repair with sutures and staples, abscess drainage, foreign body removal, ear and eye irrigation, and splinting after injuries in all types of activities such as swimming, surfing, hiking and biking — all handled in clinic.',
     tag: 'In-Clinic',
   },
   {
@@ -47,21 +47,21 @@ const services = [
     icon: Droplets,
     title: 'IV Therapy',
     description:
-      'Hydration, electrolyte therapy, vitamin infusions, and migraine relief — administered by medical professionals. IV access is quick and you take your time to receive all the medications and fluids that you need to feel better.',
+      'Hydration, electrolyte and vitamin replacement, antibiotic injections, and migraine relief — administered by medical professionals. IV access is quick and you take your time to receive all the medications and fluids that you need to feel better.',
     tag: 'Physician-Led',
   },
   {
     icon: Wind,
     title: 'Respiratory Treatments',
     description:
-      'Nebulizer and oxygen treatments to open up the airways and improve oxygen absorption. Breathe easier when you have asthma, croup, or pneumonia.',
+      'Nebulizer and oxygen treatments to open up the airways and improve oxygen absorption. Breathe easier when you have croup, bronchitis, asthma, or pneumonia.',
     tag: 'Immediate Relief',
   },
   {
     icon: Heart,
     title: 'Wound Care',
     description:
-      'Expert wound assessment and treatment for accidental injuries in the outdoors of Hawaii — sea urchin, coral rocks, jellyfish as well as inside your hotel room. Irrigation, suture placement, wound care instructions and supplies, and follow-up care.',
+      'Expert wound assessment for accidental injuries in the outdoors of Hawaii — sea urchin, coral rocks, jellyfish as well as inside your hotel room. Wound treatment with pain relief, irrigation, and disinfecting. Also, wound care instructions and supplies with follow-up care.',
     tag: 'Advanced Repair',
   },
   {
@@ -159,7 +159,7 @@ export default function Services() {
                     className={`flex-1 font-bold transition-colors duration-300 ${
                       isOpen ? 'text-[#0d2d3a]' : 'text-[#0d2d3a]/70 group-hover:text-[#0d2d3a]'
                     }`}
-                    style={{ fontSize: 'clamp(1rem, 2vw, 1.25rem)' }}
+                    style={{ fontSize: 'clamp(1.15rem, 2.5vw, 1.5rem)' }}
                   >
                     {service.title}
                   </span>
@@ -195,7 +195,7 @@ export default function Services() {
                   }`}
                 >
                   <div className="pb-7 pl-[calc(2.5rem+2.5rem+1.5rem)] lg:pl-[calc(2.5rem+2.5rem+2.5rem)] flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-                    <p className="text-[#0d2d3a]/65 text-sm leading-relaxed max-w-xl">
+                    <p className="text-[#0d2d3a]/65 text-base leading-relaxed max-w-xl">
                       {service.description}
                     </p>
                     <a

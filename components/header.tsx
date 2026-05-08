@@ -59,7 +59,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="nav-link text-black hover:text-[#d52128] text-sm font-medium font-[family-name:var(--font-inter)] tracking-wide transition-colors duration-200"
+              className="nav-link text-black hover:text-[#d52128] text-sm font-semibold font-sans tracking-wide transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -69,7 +69,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-4">
           <a
             href="tel:+18083426305"
-            className="flex items-center gap-2 text-black hover:text-[#d52128] text-sm font-[family-name:var(--font-inter)] transition-colors"
+            className="flex items-center gap-2 text-black hover:text-[#d52128] text-sm font-sans font-semibold transition-colors"
             aria-label="Call us"
           >
             <Phone size={15} />
@@ -77,7 +77,7 @@ export default function Header() {
           </a>
           <a
             href="/#contact"
-            className="bg-[#d52128] hover:bg-[#b91b21] text-white text-sm font-semibold px-6 py-2.5 rounded-sm transition-colors duration-200 font-[family-name:var(--font-inter)]"
+            className="bg-[#d52128] hover:bg-[#b91b21] text-white text-sm font-bold px-6 py-2.5 rounded-sm transition-colors duration-200 font-sans"
           >
             Book Now
           </a>
@@ -101,7 +101,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-black hover:text-[#d52128] text-base font-medium font-[family-name:var(--font-inter)] transition-colors"
+                className="text-black hover:text-[#d52128] text-base font-semibold font-sans transition-colors"
               >
                 {link.label}
               </a>
@@ -109,7 +109,7 @@ export default function Header() {
             <div className="pt-4 border-t border-gray-100 flex flex-col gap-3">
               <a
                 href="tel:+18083426305"
-                className="flex items-center gap-2 text-black text-sm font-[family-name:var(--font-inter)]"
+                className="flex items-center gap-2 text-black text-sm font-sans font-semibold"
               >
                 <Phone size={15} />
                 (808) 342-6305
@@ -117,7 +117,7 @@ export default function Header() {
               <a
                 href="/#contact"
                 onClick={() => setMobileOpen(false)}
-                className="bg-[#d52128] text-white text-sm font-semibold px-6 py-3 rounded-sm text-center font-[family-name:var(--font-inter)]"
+                className="bg-[#d52128] text-white text-sm font-bold px-6 py-3 rounded-sm text-center font-sans"
               >
                 Book Now
               </a>

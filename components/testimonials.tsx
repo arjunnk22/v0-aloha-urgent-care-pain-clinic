@@ -142,8 +142,8 @@ export default function Testimonials() {
         backgroundPosition: 'center center',
       }}
     >
-      {/* White overlay — clean readable background */}
-      <div className="absolute inset-0 bg-white/90 pointer-events-none" aria-hidden="true" />
+      {/* White overlay — reduced opacity to show turtle */}
+      <div className="absolute inset-0 bg-white/70 pointer-events-none" aria-hidden="true" />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{ background: 'radial-gradient(ellipse 70% 60% at 100% 0%, rgba(213,33,40,0.04) 0%, transparent 60%)' }}
@@ -173,12 +173,12 @@ export default function Testimonials() {
       <div className="relative flex flex-col gap-5 overflow-hidden">
         <div
           className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.95), transparent)' }}
+          style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.75), transparent)' }}
           aria-hidden="true"
         />
         <div
           className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(to left, rgba(255,255,255,0.95), transparent)' }}
+          style={{ background: 'linear-gradient(to left, rgba(255,255,255,0.75), transparent)' }}
           aria-hidden="true"
         />
 

@@ -37,7 +37,7 @@ export const faqs: FaqItem[] = [
     category: 'General',
     question: 'Do you treat children and families?',
     answer:
-      'Absolutely. We are a family-friendly clinic and welcome patients of all ages — from young children to elderly adults. Whether your child has a fever or a family member needs a minor procedure, we have you covered in one convenient visit.',
+      'Absolutely. We are a family-friendly clinic and welcome patients of all ages — from young children to elderly adults. Whether your child has a fever or a family member needs a procedure, we have you covered in one convenient visit.',
   },
   {
     id: 'g4',
@@ -139,9 +139,9 @@ export const faqs: FaqItem[] = [
   {
     id: 's3',
     category: 'Services',
-    question: 'Can you handle minor procedures?',
+    question: 'Can you handle procedures?',
     answer:
-      'Yes — we are equipped to perform a variety of minor procedures in-office, including wound care, laceration repair, abscess drainage, splinting, and more. Our physician-led model means these procedures are performed with clinical precision, without requiring an ER visit.',
+      'Yes — we are equipped to perform a variety of procedures in-office, including wound care, laceration repair, abscess drainage, splinting, and more. Our physician-led model means these procedures are performed with clinical precision, without requiring an ER visit.',
   },
   {
     id: 's4',

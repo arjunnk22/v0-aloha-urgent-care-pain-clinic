@@ -58,11 +58,11 @@ const services = [
   },
   {
     icon: Scissors,
-    title: 'Minor Procedures',
+    title: 'Procedures',
     category: 'Procedures',
     tag: 'In-Clinic',
     description:
-      'Laceration repair including cosmetically sensitive areas, abscess drainage, foreign body removal, ear and eye irrigation, and splinting — all handled in clinic.',
+      'Wound repair with sutures and staples, abscess drainage, foreign body removal, ear and eye irrigation, and splinting — all handled in clinic.',
     details: [
       'Laceration repair (including face, neck, hands)',
       'Abscess incision and drainage',
@@ -96,13 +96,13 @@ const services = [
     category: 'Wellness',
     tag: 'Physician-Led',
     description:
-      'Hydration, electrolyte therapy, vitamin infusions, and migraine relief — administered by medical professionals. Feel better before you leave.',
+      'Hydration, electrolyte and vitamin replacement, antibiotic injections, and migraine relief — administered by medical professionals. Feel better before you leave.',
     details: [
       'IV hydration for dehydration and illness',
       'Electrolyte and nutrient replenishment',
       'Migraine and headache IV protocol',
       'Hangover recovery and fatigue relief',
-      'Vitamin C and B-complex infusions',
+      'Antibiotic injections',
     ],
     ideal: 'Dehydration, migraines, jet lag, hangovers, illness recovery, and fatigue.',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/V4BHj1603wdYL4th3nQRe-Mbt2fzOlthFNKNCkCHbKnktovXQYie.jpg',
@@ -113,7 +113,7 @@ const services = [
     category: 'Acute Care',
     tag: 'Immediate Relief',
     description:
-      'Nebulizer and inhalation treatments to improve oxygen absorption, reduce airway inflammation, and manage asthma and bronchitis on the spot.',
+      'Nebulizer and inhalation treatments to improve oxygen absorption, reduce airway inflammation. Breathe easier when you have croup, bronchitis, asthma, or pneumonia.',
     details: [
       'Nebulizer therapy for asthma attacks',
       'Bronchodilator inhalation treatment',
@@ -121,7 +121,7 @@ const services = [
       'Oxygen saturation monitoring',
       'Bronchitis and COPD symptom care',
     ],
-    ideal: 'Asthma flare-ups, bronchitis, shortness of breath, and respiratory infections.',
+    ideal: 'Croup, bronchitis, asthma, pneumonia, shortness of breath, and respiratory infections.',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/YoOGcmuxlVY3u6vJRP2NP-jI34t3YoVKIk3mqN78f7X8jFQqeZCK.jpg',
   },
   {
@@ -130,7 +130,7 @@ const services = [
     category: 'Procedures',
     tag: 'Advanced Repair',
     description:
-      'Expert wound assessment, irrigation, closure, and follow-up care — including repair of cosmetically sensitive areas like the face, neck, and hands.',
+      'Expert wound assessment for accidental injuries in the outdoors of Hawaii — sea urchin, coral rocks, jellyfish as well as inside your hotel room. Wound treatment with pain relief, irrigation, and disinfecting. Also, wound care instructions and supplies with follow-up care.',
     details: [
       'Wound irrigation and debridement',
       'Primary and secondary wound closure',

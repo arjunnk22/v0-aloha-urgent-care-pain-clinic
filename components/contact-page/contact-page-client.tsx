@@ -37,7 +37,7 @@ const reasons = [
   'IV Therapy',
   'Lab Testing',
   'Wound Care',
-  'Minor Procedure',
+  'Procedure',
   'Respiratory Treatment',
   'Weight Loss Program',
   'Advanced Medical Treatment',

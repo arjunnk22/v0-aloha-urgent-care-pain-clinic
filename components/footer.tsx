@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react'
 const services = [
   'Urgent Care Visits',
   'Lab Testing',
-  'Minor Procedures',
+  'Procedures',
   'Pain Management',
   'IV Therapy',
   'Wound Care',

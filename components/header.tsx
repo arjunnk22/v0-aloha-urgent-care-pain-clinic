@@ -37,9 +37,10 @@ export default function Header() {
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Aloha%20Urgent%20Care%20Social%20Logos-QMARwRjkpaGnxYjPhnAa8kg4lF55YA.png"
             alt=""
             aria-hidden="true"
-            width={40}
-            height={40}
-            className="h-10 w-auto object-contain shrink-0"
+            width={52}
+            height={52}
+            className="h-13 w-auto object-contain shrink-0"
+            style={{ height: '52px' }}
             priority
           />
           {/* Main wordmark logo */}

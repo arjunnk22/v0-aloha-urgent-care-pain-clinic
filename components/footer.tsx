@@ -128,7 +128,7 @@ export default function Footer() {
                 </span>
               </a>
               <a
-                href="mailto:gabriella+auc@essence-marketing.design"
+                href="mailto:avatar0611@gmail.com"
                 className="flex items-start gap-3 group"
                 aria-label="Email us"
               >

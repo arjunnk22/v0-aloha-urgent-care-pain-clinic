@@ -183,14 +183,14 @@ export default function Hero() {
           aria-label="Previous image"
           className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow-md transition-all duration-200"
         >
-          <ChevronLeft size={18} className="text-[#6ba6c5]" />
+          <ChevronLeft size={18} className="text-black" />
         </button>
         <button
           onClick={next}
           aria-label="Next image"
           className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow-md transition-all duration-200"
         >
-          <ChevronRight size={18} className="text-[#6ba6c5]" />
+          <ChevronRight size={18} className="text-black" />
         </button>
 
         {/* Dots */}

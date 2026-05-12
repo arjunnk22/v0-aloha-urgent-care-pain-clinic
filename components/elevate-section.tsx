@@ -1,28 +1,18 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 
 export default function ElevateSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
-  const balloonRef = useRef<HTMLDivElement>(null)
-  const contentRef = useRef<HTMLDivElement>(null)
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            if (balloonRef.current) {
-              balloonRef.current.style.transition = 'opacity 1s ease, transform 1s ease'
-              balloonRef.current.style.opacity = '1'
-              balloonRef.current.style.transform = 'translateY(0px)'
-            }
-            if (contentRef.current) {
-              contentRef.current.style.transition = 'opacity 0.9s ease 0.2s, transform 0.9s ease 0.2s'
-              contentRef.current.style.opacity = '1'
-              contentRef.current.style.transform = 'translateY(0px)'
-            }
+            setVisible(true)
             observer.disconnect()
           }
         })
@@ -52,29 +42,11 @@ export default function ElevateSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
-        {/* Balloon */}
-        <div
-          ref={balloonRef}
-          className="shrink-0 w-48 lg:w-72 xl:w-80"
-          style={{
-            opacity: 0,
-            transform: 'translateY(40px)',
-            animation: 'none',
-          }}
-        >
-          <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/F91CcJU9toaa1iV82D7dH-MscWNGIt4RPhR754PLoxdPaZ4Bqgg6.png"
-            alt="Hot air balloon — symbol of elevating your health"
-            className="w-full h-auto drop-shadow-xl"
-            style={{ animation: 'balloonDrift 9s ease-in-out infinite' }}
-          />
-        </div>
-
         {/* Content */}
         <div
-          ref={contentRef}
-          className="flex flex-col items-start text-left max-w-2xl"
-          style={{ opacity: 0, transform: 'translateY(30px)' }}
+          className={`flex flex-col items-start text-left max-w-2xl transition-all duration-700 ease-out delay-200 ${
+            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
         >
           <span className="inline-block text-[#d52128] text-xs font-bold uppercase tracking-widest mb-5 font-[family-name:var(--font-inter)]">
             Our Promise
@@ -112,12 +84,7 @@ export default function ElevateSection() {
         </div>
       </div>
 
-      <style>{`
-        @keyframes balloonDrift {
-          0%, 100% { transform: translateY(0px) rotate(-2deg); }
-          50% { transform: translateY(-40px) rotate(2deg); }
-        }
-      `}</style>
+
     </section>
   )
 }

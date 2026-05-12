@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Noto_Sans, Inter, Quicksand } from 'next/font/google'
-import Script from 'next/script'
 import './globals.css'
 
 const notoSans = Noto_Sans({
@@ -153,10 +152,9 @@ export default function RootLayout({
           name="twitter:image"
           content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/api-attachments/kDkGSIGVaDqgM66OUvpuw-Kgy6eBKlvfHemyaiYAuT7yhOPpmNF8.png"
         />
-        <Script
+        <script
           id="json-ld"
           type="application/ld+json"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>

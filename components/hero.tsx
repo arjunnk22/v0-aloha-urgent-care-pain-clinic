@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { ArrowRight, MapPin, Clock, ShieldCheck, Users, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const slides = [
@@ -53,24 +53,24 @@ export default function Hero() {
     }
   }, [])
 
-  const goTo = (idx: number) => {
+  const goTo = useCallback((idx: number) => {
     if (animating) return
     setAnimating(true)
     setTimeout(() => {
       setCurrent(idx)
       setAnimating(false)
     }, 350)
-  }
+  }, [animating])
 
-  const prev = () => goTo((current - 1 + slides.length) % slides.length)
-  const next = () => goTo((current + 1) % slides.length)
+  const prev = useCallback(() => goTo((current - 1 + slides.length) % slides.length), [goTo, current])
+  const next = useCallback(() => goTo((current + 1) % slides.length), [goTo, current])
 
   useEffect(() => {
     timerRef.current = setInterval(() => {
       goTo((current + 1) % slides.length)
     }, INTERVAL)
     return () => { if (timerRef.current) clearInterval(timerRef.current) }
-  }, [current])
+  }, [current, goTo])
 
   return (
     <section

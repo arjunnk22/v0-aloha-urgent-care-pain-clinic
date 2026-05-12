@@ -145,7 +145,7 @@ export default function Contact() {
             <div className="bg-[#d52128] rounded-sm p-8 lg:p-10">
               {status === 'success' ? (
                 <div className="flex flex-col items-center justify-center text-center py-12 gap-4">
-                  <CheckCircle size={48} className="text-[#d52128]" />
+                  <CheckCircle size={48} className="text-white" />
                   <h3 className="text-[#fff8ed] font-black text-xl">Request Received!</h3>
                   <p className="text-[#fff8ed]/60 text-sm leading-relaxed max-w-sm font-[family-name:var(--font-inter)]">
                     Thank you for reaching out. Our team will confirm your appointment shortly.
@@ -153,7 +153,7 @@ export default function Contact() {
                   </p>
                   <button
                     onClick={() => setStatus('idle')}
-                    className="mt-4 text-[#d52128] text-sm font-semibold hover:underline font-[family-name:var(--font-inter)]"
+                    className="mt-4 text-white/70 hover:text-white text-sm font-semibold hover:underline font-[family-name:var(--font-inter)]"
                   >
                     Submit another request
                   </button>
